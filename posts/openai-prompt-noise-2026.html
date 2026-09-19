@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Clude가 공개한 "티 안 나는 AI 글" 쓰는 법 — 10만 명이 저장한 스레드 | 테크한잔</title>
+<meta name="description" content="해외 개발자 커뮤니티에서 조회수 10만을 넘긴 AI 글쓰기 가이드. '겉멋'을 빼는 5단계를 국내 필环境与 실제 도구 기준으로 다시 정리했습니다.">
+<link rel="canonical" href="https://rlaehddnr425-star.github.io/techhanjan/posts/openai-prompt-noise-2026.html">
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="hwrap"><div class="wrap hrow">
+<a class="logo" href="../index.html"><span class="cup">🥃</span><b>테크한잔</b></a>
+<nav><a href="../index.html#today">오늘의 한 잔</a><a href="../index.html#series">시리즈</a><a href="../index.html#tools">도구</a><a href="../about.html">소개</a><a href="../contact.html">제휴·문의</a></nav>
+</div></header>
+
+<main><article>
+<h1>"티 안 나는 AI 글" 쓰는 법 — 해외에서 10만 명이 저장한 스레드, 우리 식으로 따라하기</h1>
+<p class="meta">발행 2026-09-19 · 분류 <b>AI 실전편</b> · 읽는 시간 5분</p>
+
+<blockquote>이 잔의 재료: 해외 AI 개발자 커뮤니티에서 조회수·저장 수로 검증된 AI 글쓰기 가이드 스레드. 원문 표현은 옮기지 않고, 국내 도구 환경(ChatGPT·Claude·Gemini 한국어)에 맞춰 다시 썼습니다.</blockquote>
+
+<h2>30초 요약</h2>
+<table>
+<tr><th>항목</th><th>내용</th></tr>
+<tr><td>핵심</td><td>AI 티가 나는 문장의 정체는 "정보"가 아니라 <b>수식어와 과장</b>이다. 이를 빼는 것만으로 사람이 쓴 글에 가까워진다</td></tr>
+<tr><td>1단계</td><td>형용사·부사 삭제: "혁신적인", "궁극의", "화려한" 류 수식어는 정보량이 0이다</td></tr>
+<tr><td>2단계</td><td>서술 순서를 "결론 → 근거 → 조건"으로 고정. 도입부 미사여구를 금지</td></tr>
+<tr><td>3단계</td><td>문장 길이에 규칙을: 같은 길이 3연속을 피하고, 짧은 문장으로 한 번 끊는다</td></tr>
+<tr><td>4단계</td><td>주어 생략·명사 연속 등 한국어 문어를 의도적으로 섞는다</td></tr>
+<tr><td>도구</td><td>ChatGPT·Claude·Gemini 모두에서 지시문 하나로 동작 — 별도 유료 도구 불필요</td></tr>
+</table>
+
+<h2>1. 왜 "겉멋"이 티 나는가</h2>
+<p>해외 스레드가 집중한 지점은 모델 성능이 아니라 <b>출력의 문체 패턴</b>이었습니다. AI가 쓴 글은 수식어가 과잉이고, 단정적이고, 문장 리듬이 균일합니다. 이 세 가지가 사람이 쓴 글과 가장 크게 갈리는 지점이라는 게 스레드의 진단이고, 실제로 조회수를 견인한 부분도 그 진단의 구체성이었습니다.</p>
+<p>한국어도 사정은 같습니다. "~할 수 있습니다" 종결이 4연속이거나, "중요합니다", "꼭 알아야 합니다" 류 권유형이 붙는 순간 독자는 즉시 알아챕니다.</p>
+
+<h2>2. 5단계 재구성</h2>
+<h3>① 형용사·부사 도려내기</h3>
+<p>가장 먼저 해야 할 일은 지시문으로 "수식어 삭제"를 명시하는 것입니다. "혁신적인 방법"은 "방법"으로, "엄청나게 빨라집니다"는 "0.8초에서 0.2초로 줄었습니다"로. 수치로 대체할 수 없는 과장은 그 자체로 버립니다.</p>
+<h3>② 결론 먼저</h3>
+<p>도입부에 상황을 조성하는 문단(배경→문제→해결) 대신 <b>답→이유→단서</b> 순서로 고정합니다. 스레드가 특히 강조한 건 "첫 문장이 결론이 아니면 다시 쓰게 하라"는 규칙이었습니다.</p>
+<h3>③ 리듬 깨기</h3>
+<p>같은 길이 문장이 3줄 이상 이어지면 리듬이 기계적으로 굳습니다. 한 번은 짧은 문장으로 끊는 것만으로 해독됩니다. 우리도 이 글에서 그렇게 쓰고 있습니다.</p>
+<h3>④ 한국어다운 문어</h3>
+<p>주어 생략, 명사 나열, 반말 mixing까지. 한국어는 영어보다 생략이 자유로운 언어라, AI가 영어 어순을 따라가면 오히려 부자연스러워집니다.</p>
+<h3>⑤ 마지막은 사람 검수</h3>
+<p>스레드가 마지막에 붙인 단서는 "그래도 최종 판단은 사람이 한다"였습니다. 자동 윤문 도구는 리듬까지만 고쳐주고, <b>사실과 수치의 책임은 남는 사람이 집니다.</b></p>
+
+<div class="tlbox"><b>한 줄 요약</b> — AI 글에서 티 나는 건 지식이 아니라 군살이다. 지시문 하나로 군살을 빼고, 책임은 사람이 지는 구조가 해외 개발자들의 실제 사용법이었다.</div>
+
+<h2>3. 직접 돌려볼 때 주의할 점</h2>
+<ul>
+<li>윤문 후 <b>수치가 원본과 같은지 반드시 대조</b>하세요. "매우 빨라진다"로 바꿔버리는 일이 실제로 일어나는 패턴입니다.</li>
+<li>윤문 횟수를 2회 넘게 시키면 문장이 다시 균일해집니다. 1~2회가 적정입니다.</li>
+<li>출력 전체를 그대로 발행하지 마세요. 위 스레드가 검증된 이유도 결국 마지막에 사람이 한 번 더 읽었기 때문입니다.</li>
+</ul>
+
+<div class="notice" style="border:1px solid var(--line);background:var(--panel);border-radius:12px;padding:16px 18px;font-size:14px;margin-top:30px">
+<b style="color:var(--amber)">같이 마시면 좋은 잔</b><br>
+<a href="../index.html#series">AI 실전편 시리즈</a> — 해외에서 검증된 워크플로만 골라 따라 하기 단계까지.<br>
+<a href="../index.html#tools">도구 코너</a> — 구독비 계산기·로컬 LLM 체크 (준비 중).
+</div>
+
+</article></main>
+<footer>🥃 테크한잔 — 민간 정보 서비스 · <a href="../privacy.html">개인정보처리방침</a> · <a href="../terms.html">이용약관</a> · <a href="../contact.html">제휴·문의</a></footer>
+</body></html>

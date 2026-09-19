@@ -1,0 +1,126 @@
+/* 테크한잔 — 다크 네온 테크 테마
+   토큰: --void 배경 / --panel 패널 / --neon 시안 / --amber 위스키 / --violet 보조 */
+:root{
+  --void:#07090f;
+  --void2:#0b0f1a;
+  --panel:#111627;
+  --panel2:#161d33;
+  --line:#232c47;
+  --ink:#e8ecf8;
+  --sub:#8b96b8;
+  --neon:#39d0ff;
+  --neon2:#7cf5d4;
+  --amber:#ffb45c;
+  --violet:#a78bfa;
+  --rose:#ff7ab8;
+  --radius:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',sans-serif;
+  color:var(--ink);background:var(--void);line-height:1.7;
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(57,208,255,.14), transparent),
+    radial-gradient(ellipse 60% 40% at 90% 10%, rgba(167,139,250,.10), transparent);}
+a{color:var(--neon);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+
+/* 헤더 */
+header.hwrap{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);
+  background:rgba(7,9,15,.75);border-bottom:1px solid var(--line)}
+header .hrow{display:flex;align-items:center;justify-content:space-between;gap:14px;
+  min-height:60px;flex-wrap:wrap;padding:8px 0}
+.logo{font-weight:900;font-size:21px;letter-spacing:-.5px;text-decoration:none;color:#fff;
+  display:inline-flex;align-items:center;gap:8px}
+.logo .cup{filter:drop-shadow(0 0 8px rgba(255,180,92,.8))}
+.logo b{background:linear-gradient(90deg,var(--amber),var(--rose));-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{display:flex;gap:16px;flex-wrap:wrap}
+nav a{color:var(--sub);font-size:14px;font-weight:600;text-decoration:none;padding:6px 2px;border-bottom:2px solid transparent}
+nav a:hover{color:var(--ink);border-bottom-color:var(--neon)}
+
+main{padding:0 0 60px}
+section{padding:44px 0 8px}
+section>h2{margin:0 0 18px;font-size:22px;letter-spacing:-.5px}
+section>h2 .hl{color:var(--neon)}
+
+/* 히어로 */
+.hero{padding:72px 0 40px;text-align:left;position:relative}
+.hero .kicker{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;
+  color:var(--neon2);background:rgba(124,245,212,.08);border:1px solid rgba(124,245,212,.25);
+  border-radius:999px;padding:6px 14px;margin-bottom:18px;letter-spacing:.5px}
+.hero .kicker .dot{width:7px;height:7px;border-radius:50%;background:var(--neon2);
+  box-shadow:0 0 10px var(--neon2);animation:pulse 2s infinite}
+@keyframes pulse{50%{opacity:.35}}
+.hero h1{font-size:clamp(30px,5.2vw,52px);line-height:1.22;margin:0 0 16px;letter-spacing:-1.5px;font-weight:900}
+.hero h1 .glow{background:linear-gradient(92deg,var(--neon) 0%,var(--violet) 55%,var(--rose) 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  filter:drop-shadow(0 0 22px rgba(57,208,255,.35))}
+.hero .sub{font-size:17px;color:var(--sub);max-width:640px;margin:0 0 26px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;background:linear-gradient(92deg,var(--neon),#2196f3);color:#04121f;
+  font-weight:800;border:0;padding:13px 26px;border-radius:12px;font-size:15px;cursor:pointer;
+  box-shadow:0 0 24px rgba(57,208,255,.35);text-decoration:none;transition:transform .15s}
+.btn:hover{transform:translateY(-2px);text-decoration:none}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line);box-shadow:none}
+.btn.ghost:hover{border-color:var(--neon)}
+
+/* 카드 그리드 */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
+.card{background:linear-gradient(180deg,var(--panel),var(--void2));
+  border:1px solid var(--line);border-radius:var(--radius);padding:22px;position:relative;overflow:hidden;
+  transition:border-color .2s, transform .2s, box-shadow .2s}
+.card:hover{border-color:rgba(57,208,255,.55);transform:translateY(-3px);
+  box-shadow:0 10px 34px rgba(0,0,0,.5),0 0 24px rgba(57,208,255,.10)}
+.card .cat{display:inline-block;font-size:11.5px;font-weight:800;letter-spacing:.5px;
+  border-radius:999px;padding:3px 11px;margin-bottom:12px}
+.cat.aily{background:rgba(57,208,255,.12);color:var(--neon);border:1px solid rgba(57,208,255,.35)}
+.cat.guide{background:rgba(167,139,250,.12);color:var(--violet);border:1px solid rgba(167,139,250,.35)}
+.cat.tool{background:rgba(255,180,92,.12);color:var(--amber);border:1px solid rgba(255,180,92,.35)}
+.cat.hot{background:rgba(255,122,184,.12);color:var(--rose);border:1px solid rgba(255,122,184,.35)}
+.card h3{margin:0 0 8px;font-size:17px;line-height:1.45;letter-spacing:-.3px}
+.card h3 a{color:var(--ink)}
+.card h3 a:hover{color:var(--neon);text-decoration:none}
+.card p{margin:0;font-size:14px;color:var(--sub)}
+.card .foot{margin-top:14px;display:flex;justify-content:space-between;align-items:center;
+  font-size:12.5px;color:#5f6c8f}
+
+/* 배지 · 호환 */
+.steam-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.badge{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:700;color:var(--sub);
+  background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:7px 15px}
+.badge .num{color:var(--neon2);font-family:'JetBrains Mono',ui-monospace,monospace}
+
+/* 기사 본문 */
+article{max-width:720px;margin:0 auto;padding:36px 20px 0}
+article h1{font-size:28px;line-height:1.35;letter-spacing:-1px;margin:0 0 10px}
+article h2{font-size:20px;margin:38px 0 12px;padding-left:12px;border-left:4px solid var(--neon);letter-spacing:-.5px}
+article h3{font-size:16.5px;margin:26px 0 8px;color:var(--neon2)}
+article p{font-size:15.5px;color:#c6cde3}
+article li{font-size:15px;color:#c6cde3;margin:6px 0}
+.meta{color:#5f6c8f;font-size:13px;margin-bottom:26px}
+.meta b{color:var(--amber)}
+blockquote{border-left:3px solid var(--violet);background:rgba(167,139,250,.07);
+  margin:18px 0;padding:12px 18px;border-radius:0 10px 10px 0;font-size:14.5px;color:#b9c2dd}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:18px 0}
+th,td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top}
+th{background:var(--panel2);color:var(--neon2);font-size:13px}
+td{background:rgba(17,22,39,.6)}
+code{font-family:'JetBrains Mono',ui-monospace,monospace;background:var(--panel2);
+  border:1px solid var(--line);border-radius:6px;padding:2px 7px;font-size:13px;color:var(--amber)}
+pre{background:var(--void2);border:1px solid var(--line);border-radius:12px;padding:16px;overflow-x:auto}
+pre code{border:0;background:none}
+.tlbox{border:1px solid rgba(57,208,255,.35);background:rgba(57,208,255,.06);border-radius:12px;
+  padding:16px 18px;margin:22px 0;font-size:14.5px}
+.tlbox b{color:var(--neon)}
+
+/* 푸터 */
+footer{margin-top:70px;border-top:1px solid var(--line);padding:28px 20px;color:#5f6c8f;
+  font-size:13px;text-align:center;background:var(--void2)}
+footer a{color:var(--sub)}
+
+@media(max-width:640px){
+  .hero{padding:52px 0 28px}
+  header .hrow{justify-content:center;text-align:center}
+  nav{justify-content:center;gap:12px}
+}
