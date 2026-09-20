@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rlaehddnr890425-star.github.io/techhanjan/sitemap.xml
+Sitemap: https://tech.hub77a.com/sitemap.xml
