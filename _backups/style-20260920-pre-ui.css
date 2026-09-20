@@ -124,12 +124,3 @@ footer a{color:var(--sub)}
   header .hrow{justify-content:center;text-align:center}
   nav{justify-content:center;gap:12px}
 }
-
-/* ── UI 리뉴얼 v3 (2026-09-20, 벤치마크: beUI devtool landing) — 글래스 패널·네온 경계 그라디언트·모노 라벨 ── */
-.card,.panel,article{background:linear-gradient(160deg,rgba(17,22,39,.92),rgba(11,15,26,.88));border:1px solid rgba(64,220,255,.14);border-radius:16px;box-shadow:0 0 0 1px rgba(7,9,15,.6),0 14px 40px rgba(0,0,0,.45)}
-h1,h2{letter-spacing:-.4px}
-h2::before{content:'';display:block;width:30px;height:2px;background:linear-gradient(90deg,var(--neon,#40dcff),transparent);margin-bottom:10px}
-.btn,button,.chip,.tag{text-transform:none}
-.btn{box-shadow:0 0 22px rgba(64,220,255,.25)}
-.btn:hover{box-shadow:0 0 34px rgba(64,220,255,.4)}
-::selection{background:rgba(64,220,255,.28)}
