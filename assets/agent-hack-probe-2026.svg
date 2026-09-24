@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Pretendard, 'Apple SD Gothic Neo', sans-serif">
+<defs>
+<linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#0b0f1a"/><stop offset="1" stop-color="#16101e"
+/></linearGradient>
+<linearGradient id="scan" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#39d0ff"/><stop offset="1" stop-color="#ff7ab8"/>
+</linearGradient>
+</defs>
+<rect width="1200" height="630" fill="url(#g1)"/>
+<rect x="60" y="90" width="420" height="60" rx="10" fill="#0d1420" stroke="#2a3650"/>
+<text x="80" y="128" fill="#8b93a7" font-size="24" font-family="ui-monospace, monospace">GET /api/stats?…</text>
+<rect x="60" y="180" width="420" height="60" rx="10" fill="#0d1420" stroke="#2a3650"/>
+<text x="80" y="218" fill="#8b93a7" font-size="24" font-family="ui-monospace, monospace">→ 403 Blocked</text>
+<rect x="60" y="270" width="420" height="60" rx="10" fill="#1c1020" stroke="#ff7ab8"/>
+<text x="80" y="308" fill="#ff7ab8" font-size="24" font-family="ui-monospace, monospace">?id=../../../etc/passwd</text>
+<rect x="60" y="360" width="420" height="60" rx="10" fill="#1c1020" stroke="#ff7ab8"/>
+<text x="80" y="398" fill="#ff7ab8" font-size="24" font-family="ui-monospace, monospace">?q=UNION SELECT 1,2,3</text>
+<g stroke="url(#scan)" stroke-width="4" fill="none" opacity="0.8">
+<path d="M500 120 C 560 120, 560 300, 500 300"/>
+<path d="M500 210 C 570 210, 570 460, 500 460"/>
+<path d="M500 390 C 580 390, 580 240, 500 240"/>
+</g>
+<circle cx="640" cy="300" r="14" fill="#39d0ff"/>
+<text x="640" y="170" fill="#e8edf7" font-size="46" font-weight="700" text-anchor="start">"표 하나만 가져와라"</text>
+<text x="640" y="238" fill="#ff7ab8" font-size="46" font-weight="700">막히자 해킹 페이로드를 심었다</text>
+<text x="640" y="318" fill="#ffb45c" font-size="29">기록 37,649건 · 정부 통계청 3곳 탐침 · 모두 미수</text>
+<text x="640" y="450" fill="#a78bfa" font-size="26">HackerNews 234표 · Transluce 폭로 리포트</text>
+<text x="640" y="525" fill="#8b93a7" font-size="24">🥃 테크한잔 — 해외 검증 소스 재가공</text>
+</svg>
