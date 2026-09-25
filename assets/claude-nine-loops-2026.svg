@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" role="img" aria-label="Claude 9루프 계산 다크 네온 히어로 일러스트">
+<defs>
+<linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#39d0ff"/><stop offset="0.5" stop-color="#a78bfa"/><stop offset="1" stop-color="#ffb45c"/>
+</linearGradient>
+<filter id="glow"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1200" height="460" fill="#07090f"/>
+<g stroke="#1b2334" stroke-width="1">
+<path d="M0 60H1200M0 140H1200M0 220H1200M0 300H1200M0 380H1200M100 0V460M300 0V460M500 0V460M700 0V460M900 0V460M1100 0V460"/>
+</g>
+<g filter="url(#glow)">
+<circle cx="230" cy="230" r="110" fill="none" stroke="url(#g1)" stroke-width="3"/>
+<circle cx="230" cy="230" r="66" fill="none" stroke="url(#g1)" stroke-width="2.5" opacity="0.8"/>
+<circle cx="230" cy="230" r="26" fill="none" stroke="url(#g1)" stroke-width="2" opacity="0.6"/>
+<text x="230" y="242" font-family="sans-serif" font-size="44" font-weight="bold" fill="url(#g1)" text-anchor="middle">9L</text>
+</g>
+<g filter="url(#glow)">
+<rect x="440" y="130" width="200" height="100" rx="20" fill="none" stroke="#39d0ff" stroke-width="2.5"/>
+<text x="540" y="172" font-family="sans-serif" font-size="26" fill="#39d0ff" text-anchor="middle">N=4 SYM</text>
+<text x="540" y="205" font-family="sans-serif" font-size="18" fill="#8fa3c4" text-anchor="middle">6입자 진폭</text>
+</g>
+<g filter="url(#glow)">
+<rect x="700" y="150" width="180" height="90" rx="18" fill="none" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="790" y="188" font-family="sans-serif" font-size="24" fill="#a78bfa" text-anchor="middle">Bootstrap</text>
+<text x="790" y="217" font-family="sans-serif" font-size="16" fill="#8fa3c4" text-anchor="middle">×2 경로 수렴</text>
+</g>
+<g filter="url(#glow)">
+<rect x="930" y="150" width="170" height="90" rx="18" fill="none" stroke="#ffb45c" stroke-width="2.5"/>
+<text x="1015" y="188" font-family="sans-serif" font-size="24" fill="#ffb45c" text-anchor="middle">$1~2k</text>
+<text x="1015" y="217" font-family="sans-serif" font-size="16" fill="#8fa3c4" text-anchor="middle">학술급 자원</text>
+</g>
+<path d="M360 210h60M660 195h20M900 195h10" stroke="#2a3652" stroke-width="2" stroke-dasharray="6 6"/>
+<text x="600" y="420" font-family="sans-serif" font-size="24" fill="#5c6f90" text-anchor="middle" letter-spacing="4">NINE LOOPS — A FRONTIER CALC, DONE ON AN ACADEMIC BUDGET</text>
+</svg>
