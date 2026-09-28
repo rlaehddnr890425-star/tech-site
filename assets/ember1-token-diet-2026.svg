@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" font-family="'Pretendard','Apple SD Gothic Neo',sans-serif">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#39d0ff"/>
+      <stop offset="0.55" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#ffb45c"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffb45c" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#ffb45c" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="500" fill="#07090f"/>
+  <ellipse cx="880" cy="300" rx="330" ry="240" fill="url(#glow)"/>
+
+  <g opacity="0.9">
+    <rect x="80" y="120" width="30" height="230" rx="6" fill="#141a28" stroke="#2a3448"/>
+    <rect x="80" y="150" width="30" height="200" rx="6" fill="url(#g1)" opacity="0.85"/>
+    <rect x="130" y="120" width="30" height="230" rx="6" fill="#141a28" stroke="#2a3448"/>
+    <rect x="130" y="242" width="30" height="108" rx="6" fill="url(#g1)" opacity="0.55"/>
+    <text x="120" y="400" fill="#8ea0bd" font-size="22" text-anchor="middle">49.3K → 29.9K</text>
+  </g>
+
+  <g stroke="#39d0ff" stroke-width="2.4" fill="none" opacity="0.8">
+    <path d="M 300 350 C 340 250, 380 380, 420 250"/>
+    <path d="M 300 350 C 350 320, 390 200, 440 170" opacity="0.55"/>
+    <path d="M 420 250 C 470 190, 520 260, 560 180"/>
+    <path d="M 560 180 C 610 130, 650 220, 700 150" opacity="0.5"/>
+  </g>
+  <g fill="#ffb45c">
+    <circle cx="420" cy="250" r="7"/>
+    <circle cx="560" cy="180" r="7"/>
+    <circle cx="700" cy="150" r="7"/>
+  </g>
+  <path d="M 260 420 C 400 400, 560 320, 720 200 C 780 152, 840 128, 900 116" stroke="url(#g1)" stroke-width="5" fill="none" stroke-linecap="round" filter="url(#soft)" opacity="0.9"/>
+  <path d="M 260 420 C 400 400, 560 320, 720 200 C 780 152, 840 128, 900 116" stroke="url(#g1)" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+
+  <g>
+    <circle cx="720" cy="200" r="16" fill="#07090f" stroke="#ffb45c" stroke-width="3"/>
+    <circle cx="900" cy="116" r="16" fill="#07090f" stroke="#39d0ff" stroke-width="3"/>
+    <text x="905" y="170" fill="#cfe2ff" font-size="24">비용 축소에 quality를 얹은 직선</text>
+  </g>
+
+  <text x="80" y="70" fill="#f2f6ff" font-size="46" font-weight="700">생각은 40% 덜, 답은 그대로</text>
+  <text x="80" y="452" fill="#8ea0bd" font-size="22">Ember-1 · 학습으로 토큰 식단을 설계하다 · 테크한잔</text>
+</svg>
