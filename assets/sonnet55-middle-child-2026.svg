@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" font-family="'Pretendard','Apple SD Gothic Neo',sans-serif">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#39d0ff"/>
+      <stop offset="0.55" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#ffb45c"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#39d0ff" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#39d0ff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="500" fill="#07090f"/>
+  <ellipse cx="600" cy="240" rx="520" ry="260" fill="url(#glow)"/>
+
+  <!-- broken old-generation gauge -->
+  <g>
+    <text x="90" y="105" fill="#ff7ab8" font-size="26" font-weight="700" letter-spacing="1">Sonnet 5</text>
+    <rect x="90" y="128" width="380" height="34" rx="8" fill="#141a26" stroke="#2a3242"/>
+    <rect x="90" y="128" width="40" height="34" rx="8" fill="#ff7ab8" opacity="0.75"/>
+    <text x="480" y="153" fill="#8b93a7" font-size="24" font-weight="600">10.3%</text>
+    <line x1="98" y1="126" x2="128" y2="164" stroke="#ff7ab8" stroke-width="3" opacity="0.9"/>
+    <line x1="122" y1="126" x2="96" y2="164" stroke="#ff7ab8" stroke-width="3" opacity="0.9"/>
+    <text x="90" y="196" fill="#5b6478" font-size="18">격자 무늬 채점: 정답은 10개뿐</text>
+  </g>
+
+  <!-- soaring new gauge -->
+  <g>
+    <text x="90" y="285" fill="#39d0ff" font-size="30" font-weight="800" letter-spacing="1">Sonnet 5.5</text>
+    <rect x="90" y="310" width="380" height="44" rx="10" fill="#141a26" stroke="#39d0ff" stroke-opacity="0.6"/>
+    <rect x="90" y="310" width="272" height="44" rx="10" fill="url(#g1)" filter="url(#soft)" opacity="0.75"/>
+    <rect x="90" y="310" width="272" height="44" rx="10" fill="url(#g1)"/>
+    <text x="480" y="341" fill="#e8ecf5" font-size="28" font-weight="700">70.6%</text>
+    <text x="90" y="388" fill="#8b93a7" font-size="18">같은 평가표 — 한 세대가 60점 차로 밀려났다</text>
+  </g>
+
+  <!-- price tag frozen -->
+  <g transform="translate(660,90)">
+    <rect x="0" y="0" width="440" height="150" rx="16" fill="#10151f" stroke="#2a3242"/>
+    <text x="28" y="48" fill="#ffb45c" font-size="24" font-weight="700">가격표는 동결</text>
+    <text x="28" y="86" fill="#c8cfdd" font-size="20">입력 $2 · 출력 $10 · 캐시 $0.20 (백만 토큰당)</text>
+    <text x="28" y="118" fill="#8b93a7" font-size="19">같은 단가, 적은 토큰 — 과제당 청구액 최대 -30%</text>
+    <text x="28" y="140" fill="#5b6478" font-size="15">수치 출처: 제조사 발표문 (제3자 미재현)</text>
+  </g>
+
+  <!-- speed + flag -->
+  <g transform="translate(660,270)">
+    <rect x="0" y="0" width="210" height="140" rx="16" fill="#10151f" stroke="#2a3242"/>
+    <text x="24" y="52" fill="#a78bfa" font-size="34" font-weight="800">+30%</text>
+    <text x="24" y="86" fill="#c8cfdd" font-size="18">생성 속도</text>
+    <text x="24" y="114" fill="#5b6478" font-size="15">Sonnet 역대 최속</text>
+  </g>
+  <g transform="translate(890,270)">
+    <rect x="0" y="0" width="210" height="140" rx="16" fill="#10151f" stroke="#ff7ab8" stroke-opacity="0.55"/>
+    <text x="24" y="50" fill="#ff7ab8" font-size="22" font-weight="700">🚩 폴백 논쟁</text>
+    <text x="24" y="84" fill="#c8cfdd" font-size="17">보안 필터 오발동</text>
+    <text x="24" y="112" fill="#8b93a7" font-size="15">HN 513표·345개 댓글</text>
+  </g>
+
+  <text x="90" y="452" fill="#e8ecf5" font-size="30" font-weight="800" letter-spacing="0.5">작은 형제 등장, 큰형 벤치마크 추월 — 그리고 사라진 <tspan fill="#ffb45c">바로 윗세대</tspan></text>
+  <text x="1110" y="470" text-anchor="end" fill="#5b6478" font-size="17">🥃 테크한잔</text>
+</svg>
