@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" font-family="'Pretendard','Apple SD Gothic Neo',sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0f14"/><stop offset="1" stop-color="#131a22"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <g stroke="#39d0ff" stroke-opacity="0.10" stroke-width="1">
+    <path d="M0 100H1200M0 250H1200M0 400H1200M200 0V500M500 0V500M800 0V500M1050 0V500"/>
+  </g>
+  <g filter="url(#glow)">
+    <rect x="120" y="150" width="330" height="200" rx="18" fill="none" stroke="#39d0ff" stroke-width="4"/>
+    <path d="M150 200h120M150 240h180M150 280h90" stroke="#39d0ff" stroke-opacity="0.5" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="850" cy="250" r="80" fill="none" stroke="#ff7ab8" stroke-width="4"/>
+    <circle cx="820" cy="228" r="9" fill="#ff7ab8"/><circle cx="880" cy="228" r="9" fill="#ff7ab8"/>
+    <path d="M812 288q38 -26 76 0" stroke="#ff7ab8" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M450 250C580 250 640 250 726 250" stroke="#ffb45c" stroke-width="4" stroke-dasharray="14 12" fill="none"/>
+    <path d="M706 230l26 20-26 20" fill="none" stroke="#ffb45c" stroke-width="4"/>
+    <path d="M600 90l18 44M600 410l18 -44" stroke="#a78bfa" stroke-width="4" stroke-linecap="round"/>
+    <text x="560" y="70" fill="#ffb45c" font-size="34" font-weight="700">"Rogue"?</text>
+  </g>
+  <text x="120" y="440" fill="#8fa3b8" font-size="26">상자는 열려 있었다 — 꼬리표 대신 제어의 문제를 읽는 법</text>
+</svg>
