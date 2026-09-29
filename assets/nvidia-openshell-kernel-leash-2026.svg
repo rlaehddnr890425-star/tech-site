@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" font-family="'Pretendard','Apple SD Gothic Neo',sans-serif">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#39d0ff"/>
+      <stop offset="0.55" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#ffb45c"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#39d0ff" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#39d0ff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="500" fill="#07090f"/>
+  <ellipse cx="330" cy="290" rx="330" ry="240" fill="url(#glow)"/>
+
+  <!-- outer kernel boundary -->
+  <rect x="60" y="70" width="560" height="380" rx="26" fill="none" stroke="url(#g1)" stroke-width="3" opacity="0.95"/>
+  <text x="340" y="108" text-anchor="middle" fill="#39d0ff" font-size="24" font-weight="700" letter-spacing="2">샌드박스 — 커널이 경계를 지킴</text>
+
+  <!-- agent inside -->
+  <rect x="120" y="150" width="240" height="120" rx="16" fill="#0e1424" stroke="#a78bfa" stroke-width="2.5"/>
+  <text x="240" y="205" text-anchor="middle" fill="#e8ecf7" font-size="22" font-weight="700">AI 에이전트</text>
+  <text x="240" y="238" text-anchor="middle" fill="#8b93a9" font-size="16">권한 밖은 "못 해"</text>
+
+  <!-- files blocked -->
+  <g opacity="0.9">
+    <rect x="120" y="320" width="120" height="64" rx="10" fill="#0e1424" stroke="#ff7ab8" stroke-width="2"/>
+    <text x="180" y="358" text-anchor="middle" fill="#ff7ab8" font-size="16">비밀번호</text>
+    <line x1="180" y1="290" x2="180" y2="316" stroke="#ff7ab8" stroke-width="2.5"/>
+    <circle cx="180" cy="303" r="13" fill="none" stroke="#ff7ab8" stroke-width="2.5"/>
+    <line x1="171" y1="294" x2="189" y2="312" stroke="#ff7ab8" stroke-width="2.5"/>
+  </g>
+
+  <!-- supervisor -->
+  <rect x="660" y="180" width="240" height="130" rx="16" fill="#0e1424" stroke="#ffb45c" stroke-width="2.5"/>
+  <text x="780" y="232" text-anchor="middle" fill="#ffb45c" font-size="21" font-weight="700">감시 프로그램</text>
+  <text x="780" y="264" text-anchor="middle" fill="#8b93a9" font-size="15">읽기는 통과, 쓰기는 차단</text>
+
+  <!-- egress path -->
+  <line x1="620" y1="245" x2="656" y2="245" stroke="#39d0ff" stroke-width="3"/>
+  <polygon points="656,245 644,239 644,251" fill="#39d0ff"/>
+  <line x1="900" y1="245" x2="1010" y2="245" stroke="#39d0ff" stroke-width="3" stroke-dasharray="8 7"/>
+  <polygon points="1010,245 998,239 998,251" fill="#39d0ff"/>
+
+  <!-- network -->
+  <circle cx="1080" cy="245" r="52" fill="none" stroke="url(#g1)" stroke-width="2.5" opacity="0.9"/>
+  <text x="1080" y="251" text-anchor="middle" fill="#e8ecf7" font-size="18">인터넷</text>
+
+  <!-- policy note -->
+  <text x="780" y="380" text-anchor="middle" fill="#8b93a9" font-size="16">정책은 형식 논리로 미리 증명</text>
+  <text x="780" y="408" text-anchor="middle" fill="#8b93a9" font-size="16">모든 결정이 감사 기록으로</text>
+
+  <!-- title glow -->
+  <g filter="url(#soft)" opacity="0.6">
+    <text x="600" y="46" text-anchor="middle" fill="url(#g1)" font-size="34" font-weight="800">OpenShell — 커널이 에이전트를 묶는다</text>
+  </g>
+  <text x="600" y="46" text-anchor="middle" fill="url(#g1)" font-size="34" font-weight="800">OpenShell — 커널이 에이전트를 묶는다</text>
+</svg>
