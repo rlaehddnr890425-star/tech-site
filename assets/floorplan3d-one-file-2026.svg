@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" font-family="'Pretendard','Apple SD Gothic Neo',sans-serif">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#39d0ff"/><stop offset="0.55" stop-color="#a78bfa"/><stop offset="1" stop-color="#ffb45c"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#39d0ff" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#39d0ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffb45c" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#ffb45c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="500" fill="#07090f"/>
+  <ellipse cx="330" cy="270" rx="330" ry="230" fill="url(#glow)"/>
+  <ellipse cx="880" cy="280" rx="330" ry="230" fill="url(#glow2)"/>
+
+  <!-- left: 2D floor plan -->
+  <g stroke="#39d0ff" stroke-width="2.5" fill="none" opacity="0.95">
+    <rect x="120" y="120" width="380" height="260" rx="4"/>
+    <line x1="120" y1="250" x2="330" y2="250"/>
+    <line x1="330" y1="120" x2="330" y2="380"/>
+    <line x1="330" y1="300" x2="500" y2="300"/>
+    <path d="M330 190 a40 40 0 0 1 40 40" stroke-width="1.6" stroke-dasharray="4 4"/>
+    <path d="M220 250 a35 35 0 0 0 35 35" stroke-width="1.6" stroke-dasharray="4 4" transform="rotate(180 237 267)"/>
+  </g>
+  <g stroke="#a78bfa" stroke-width="1.5" fill="none" opacity="0.85">
+    <rect x="150" y="150" width="70" height="40" rx="3"/>
+    <rect x="150" y="290" width="46" height="66" rx="3"/>
+    <circle cx="420" cy="185" r="22"/>
+    <rect x="360" y="320" width="90" height="34" rx="3"/>
+  </g>
+  <text x="150" y="235" fill="#39d0ff" font-size="17" opacity="0.9">거실</text>
+  <text x="352" y="160" fill="#39d0ff" font-size="15" opacity="0.75">침실</text>
+  <text x="352" y="345" fill="#39d0ff" font-size="15" opacity="0.75">주방</text>
+  <text x="188" y="430" fill="#7c8aa5" font-size="16">2D 도면 · SVG · 1:60</text>
+
+  <!-- middle: arrow / T key -->
+  <g>
+    <path d="M560 250 h90 m0 0 l-16 -12 m16 12 l-16 12" stroke="#ffb45c" stroke-width="3" fill="none"/>
+    <rect x="576" y="180" width="58" height="40" rx="9" fill="none" stroke="#ffb45c" stroke-width="2.4"/>
+    <text x="597" y="208" fill="#ffb45c" font-size="22" font-weight="700">T</text>
+    <text x="556" y="300" fill="#ffb45c" font-size="15" opacity="0.85">한 장의 HTML</text>
+  </g>
+
+  <!-- right: 3D isometric room -->
+  <g stroke="#ffb45c" stroke-width="2.2" fill="none" opacity="0.95">
+    <path d="M760 320 L900 380 L1060 320 L920 260 Z"/>
+    <path d="M760 320 L760 210 L920 150 L920 260"/>
+    <path d="M1060 320 L1060 210 L920 150"/>
+    <path d="M920 260 L920 150" stroke-dasharray="5 5" stroke-width="1.4" opacity="0.6"/>
+  </g>
+  <g stroke="#39d0ff" stroke-width="1.8" fill="none" opacity="0.9">
+    <path d="M800 300 L850 322 L850 282 L800 260 Z"/>
+    <path d="M950 300 L1000 276 L1000 250 L950 274 Z"/>
+    <circle cx="980" cy="340" r="4" fill="#39d0ff" stroke="none"/>
+    <path d="M976 340 a10 6 0 0 1 10 -8" stroke-width="1.4"/>
+  </g>
+  <text x="828" y="440" fill="#ffb45c" font-size="16">3D 씬 · Three.js r160 · WASD</text>
+
+  <text x="600" y="62" text-anchor="middle" fill="url(#g1)" font-size="34" font-weight="800">index.html 하나에 집 전체</text>
+  <text x="600" y="96" text-anchor="middle" fill="#7c8aa5" font-size="18">공개 하루 반 · 스타 683 · 포크 162 · LICENSE 없음</text>
+</svg>
