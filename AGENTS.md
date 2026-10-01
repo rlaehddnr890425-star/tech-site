@@ -22,3 +22,8 @@
 
 ## 게재 전
 사용자 검수본 승인 후 push (always-review-before-publish). live 반영은 `verify_deploy.py --repo sangsik` 식의 재사용 스크립트 또는 파일 해시 비교 1회, sleep 폴링 금지.
+
+## v4 스타일·광고 슬롯 (2026-10-02 사용자 지시 — 가독성 + 광고 대응)
+- 조판·타이포·광고 슬롯은 `style.css` v4 블록이 단일 관리한다. 새 글에서 폰트·본문 크기를 인라인 style로 덮지 않는다(히어로 이미지 `p.hero` 스타일은 v4가 처리 — `style="width:100%;border-radius:14px…"` 반복 금지).
+- **광고 슬롯(필수)**: 롱폼(8분+) 본문 — ‘30초 요약’ 뒤 `.ad-slot inline` 1개 + 결론(h2 마지막) 앞 `.ad-slot inline` 1개 + 글 하단 `.ad-slot bottom` 1개. 마크업은 `<div class="ad-slot inline">광고</div>` 그대로(다크 테마 높이·여백은 CSS가 예약). 글당 슬롯 3개 초과 금지(광고:콘텐츠 ≈ 3:7).
+- 롱폼(8분+)에 한해 첫 h2 뒤 목차 박스 허용: `<div class="toc"><p class="toc-h">목차</p><ol><li><a href="#id">제목</a></li></ol></div>` — 해당 h2에 id 부여.
