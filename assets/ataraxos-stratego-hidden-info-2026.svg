@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" font-family="'Pretendard','Apple SD Gothic Neo',sans-serif">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#39d0ff"/><stop offset="0.55" stop-color="#a78bfa"/><stop offset="1" stop-color="#ffb45c"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#39d0ff" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#39d0ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffb45c" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#ffb45c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="500" fill="#07090f"/>
+  <ellipse cx="330" cy="250" rx="350" ry="260" fill="url(#glow)"/>
+  <ellipse cx="900" cy="300" rx="330" ry="230" fill="url(#glow2)"/>
+
+  <g>
+    <text x="130" y="118" fill="#c8d6e5" font-size="26" font-weight="700">감춘 말의 확률을 읽는 AI</text>
+    <text x="130" y="152" fill="#8aa0b8" font-size="17">Stratego · 40말 배치 10³³↑ · 2,000수</text>
+    <g stroke="#39d0ff" stroke-width="2" opacity="0.8" fill="none">
+      <rect x="130" y="185" width="330" height="220" rx="14"/>
+      <line x1="212" y1="185" x2="212" y2="405"/>
+      <line x1="294" y1="185" x2="294" y2="405"/>
+      <line x1="376" y1="185" x2="376" y2="405"/>
+      <line x1="130" y1="240" x2="460" y2="240"/>
+      <line x1="130" y1="295" x2="460" y2="295"/>
+      <line x1="130" y1="350" x2="460" y2="350"/>
+    </g>
+    <g font-size="20" font-weight="700" text-anchor="middle">
+      <circle cx="171" cy="267" r="20" fill="#a78bfa" opacity="0.9"/><text x="171" y="274" fill="#0b0f18">?</text>
+      <circle cx="253" cy="213" r="20" fill="#39d0ff" opacity="0.9"/><text x="253" y="220" fill="#0b0f18">★</text>
+      <circle cx="335" cy="322" r="20" fill="#a78bfa" opacity="0.9"/><text x="335" y="329" fill="#0b0f18">?</text>
+      <circle cx="417" cy="377" r="20" fill="#ffb45c" opacity="0.9"/><text x="417" y="384" fill="#0b0f18">⚑</text>
+      <circle cx="171" cy="377" r="20" fill="#39d0ff" opacity="0.9"/><text x="171" y="384" fill="#0b0f18">✦</text>
+    </g>
+  </g>
+
+  <g>
+    <path d="M480 290 C 560 240, 620 340, 700 285" stroke="url(#g1)" stroke-width="3" fill="none" opacity="0.85"/>
+    <circle cx="700" cy="285" r="7" fill="#ffb45c"/>
+    <circle cx="880" cy="235" r="52" fill="none" stroke="url(#g1)" stroke-width="3.5"/>
+    <g stroke="#8aa0b8" stroke-width="1.6" opacity="0.8">
+      <line x1="880" y1="183" x2="880" y2="150"/><circle cx="880" cy="143" r="8" fill="#39d0ff"/>
+      <line x1="928" y1="212" x2="962" y2="190"/><circle cx="970" cy="185" r="8" fill="#a78bfa"/>
+      <line x1="928" y1="260" x2="962" y2="285"/><circle cx="970" cy="291" r="8" fill="#ffb45c"/>
+      <line x1="832" y1="212" x2="798" y2="190"/><circle cx="790" cy="185" r="8" fill="#ffb45c"/>
+    </g>
+    <text x="880" y="243" fill="#c8d6e5" font-size="21" font-weight="700" text-anchor="middle">신념망</text>
+    <text x="880" y="330" fill="#8aa0b8" font-size="16" text-anchor="middle">감춘 말 추정 → 수 읽기</text>
+    <text x="1075" y="380" fill="#39d0ff" font-size="17" text-anchor="end" font-family="ui-monospace,Menlo,monospace">P(원수)=0.62</text>
+    <text x="1075" y="405" fill="#8aa0b8" font-size="17" text-anchor="end" font-family="ui-monospace,Menlo,monospace">P(폭탄)=0.23</text>
+  </g>
+
+  <text x="130" y="452" fill="#c8d6e5" font-size="19" font-weight="600">20판 15승 1패 4무 · 16 GPU × 1주 · 훈련비 수천 달러</text>
+</svg>
