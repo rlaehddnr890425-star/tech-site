@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" font-family="sans-serif">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#39d0ff"/><stop offset="0.55" stop-color="#a78bfa"/><stop offset="1" stop-color="#ffb45c"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="500" fill="#07090f"/>
+  <text x="600" y="74" font-size="44" font-weight="bold" fill="url(#g1)" text-anchor="middle" filter="url(#glow)">COLIBRI — 78B 중 3.46B만 깨어 있다</text>
+  <text x="600" y="112" font-size="21" fill="#8aa0b8" text-anchor="middle">384개 전문가 중 6+1 활성 · 50개 층 중 전체 주의력은 10개</text>
+
+  <!-- expert grid: 7 cols x 3 rows, 7 active -->
+  <g>
+    <rect x="120" y="160" width="72" height="72" rx="10" fill="#39d0ff" opacity="0.9" filter="url(#glow)"/>
+    <rect x="204" y="160" width="72" height="72" rx="10" fill="#1c2433"/>
+    <rect x="288" y="160" width="72" height="72" rx="10" fill="#ffb45c" opacity="0.9"/>
+    <rect x="372" y="160" width="72" height="72" rx="10" fill="#1c2433"/>
+    <rect x="456" y="160" width="72" height="72" rx="10" fill="#a78bfa" opacity="0.85"/>
+    <rect x="540" y="160" width="72" height="72" rx="10" fill="#1c2433"/>
+    <rect x="120" y="244" width="72" height="72" rx="10" fill="#1c2433"/>
+    <rect x="204" y="244" width="72" height="72" rx="10" fill="#39d0ff" opacity="0.75"/>
+    <rect x="288" y="244" width="72" height="72" rx="10" fill="#1c2433"/>
+    <rect x="372" y="244" width="72" height="72" rx="10" fill="#1c2433"/>
+    <rect x="456" y="244" width="72" height="72" rx="10" fill="#ffb45c" opacity="0.7"/>
+    <rect x="540" y="244" width="72" height="72" rx="10" fill="#1c2433"/>
+    <rect x="120" y="328" width="72" height="72" rx="10" fill="#1c2433"/>
+    <rect x="204" y="328" width="72" height="72" rx="10" fill="#1c2433"/>
+    <rect x="288" y="328" width="72" height="72" rx="10" fill="#a78bfa" opacity="0.7"/>
+    <rect x="372" y="328" width="72" height="72" rx="10" fill="#1c2433"/>
+    <rect x="456" y="328" width="72" height="72" rx="10" fill="#1c2433"/>
+    <rect x="540" y="328" width="72" height="72" rx="10" fill="#1c2433"/>
+  </g>
+  <text x="360" y="452" font-size="19" fill="#8aa0b8" text-anchor="middle">384 전문가 격자의 한 조각 — 빛나는 7개만 토큰에 참여</text>
+
+  <!-- attention layers: 10 full (bright) of 50 -->
+  <g>
+    <g fill="#39d0ff" filter="url(#glow)">
+      <rect x="720" y="160" width="64" height="26" rx="6" opacity="0.95"/>
+      <rect x="720" y="200" width="64" height="26" rx="6" opacity="0.85"/>
+      <rect x="720" y="240" width="64" height="26" rx="6" opacity="0.95"/>
+      <rect x="720" y="280" width="64" height="26" rx="6" opacity="0.85"/>
+      <rect x="720" y="320" width="64" height="26" rx="6" opacity="0.95"/>
+    </g>
+    <g fill="#232c3d">
+      <rect x="720" y="360" width="64" height="26" rx="6"/>
+      <rect x="720" y="400" width="64" height="26" rx="6"/>
+      <rect x="806" y="160" width="64" height="26" rx="6"/>
+      <rect x="806" y="200" width="64" height="26" rx="6"/>
+      <rect x="806" y="240" width="64" height="26" rx="6"/>
+      <rect x="892" y="160" width="64" height="26" rx="6"/>
+      <rect x="892" y="200" width="64" height="26" rx="6" fill="#39d0ff" opacity="0.75"/>
+      <rect x="892" y="240" width="64" height="26" rx="6"/>
+      <rect x="892" y="280" width="64" height="26" rx="6"/>
+      <rect x="892" y="320" width="64" height="26" rx="6"/>
+      <rect x="892" y="360" width="64" height="26" rx="6"/>
+      <rect x="892" y="400" width="64" height="26" rx="6"/>
+      <rect x="978" y="160" width="64" height="26" rx="6"/>
+      <rect x="978" y="200" width="64" height="26" rx="6"/>
+      <rect x="978" y="240" width="64" height="26" rx="6" fill="#39d0ff" opacity="0.75"/>
+      <rect x="978" y="280" width="64" height="26" rx="6"/>
+      <rect x="978" y="320" width="64" height="26" rx="6"/>
+      <rect x="978" y="360" width="64" height="26" rx="6"/>
+      <rect x="978" y="400" width="64" height="26" rx="6"/>
+      <rect x="1064" y="160" width="64" height="26" rx="6"/>
+      <rect x="1064" y="200" width="64" height="26" rx="6"/>
+      <rect x="1064" y="240" width="64" height="26" rx="6"/>
+      <rect x="1064" y="280" width="64" height="26" rx="6"/>
+      <rect x="1064" y="320" width="64" height="26" rx="6" fill="#39d0ff" opacity="0.75"/>
+      <rect x="1064" y="360" width="64" height="26" rx="6"/>
+      <rect x="1064" y="400" width="64" height="26" rx="6"/>
+    </g>
+  </g>
+  <text x="892" y="452" font-size="19" fill="#8aa0b8" text-anchor="middle">50개 층 — 밝은 10개만 전체 컨텍스트, 나머지 40개는 512토큰 창</text>
+</svg>
