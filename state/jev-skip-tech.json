@@ -1,12 +1,12 @@
 {
- "site": "tech",
- "slug": "gemini4-argon-stealth-launch-2026",
- "date": "2026-10-01-am",
- "jev": "picked 1 (useful 0.62) — Gemini 4 Argon blog.google (HN 813pts·541c)",
- "consecutive_skip": 0,
- "gate": "first_pass_review PASS (canonical 제거 리뷰트리로 로컬 자산 검사 통과 후 push)",
- "similarity": "라틴 8연속 0·한국어 전면 재가공·한자/일문 잔여 0",
- "humanize": "light 윤문(change_rate 0.053, risk 3→3)·수치·URL 대조 누락 0",
- "body_chars": "4,051자(공백 제외·본문)",
- "commit": "1307600 (origin main + brand main), verify_deploy IN_SYNC 3파일"
+  "site": "tech",
+  "slug": "deepseek-harness-desktop-2026",
+  "date": "2026-10-03-am",
+  "jev": "picked 1 (useful 0.51) — DeepSeek Harness Desktop (HN 380pts)",
+  "consecutive_skip": 0,
+  "gate": "first_pass_review PASS — push 허용",
+  "similarity": "라틴 8연속 0 (원문 deepseek.com 전문 대비 sim8_dsh.py)·한국어 전면 재가공·한자/일문 잔여 0",
+  "humanize": "light 윤문(change_rate 0.0243)·수치·URL 대조 누락 0",
+  "body_chars": "4,109자(공백 제외·본문)",
+  "commit": "7797442 (origin main + brand main), verify_deploy IN_SYNC 3파일, 라이브 200 확인"
 }
