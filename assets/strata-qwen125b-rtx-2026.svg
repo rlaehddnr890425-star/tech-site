@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400"><defs>
+<linearGradient id="tg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#39d0ff"/><stop offset=".55" stop-color="#a78bfa"/><stop offset="1" stop-color="#ffb45c"/></linearGradient>
+<radialGradient id="glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#39d0ff" stop-opacity=".28"/><stop offset="1" stop-color="#39d0ff" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="960" height="400" fill="#07090f"/>
+<circle cx="255" cy="200" r="200" fill="url(#glow)"/>
+<g stroke="#1b2436" stroke-width="1.2">
+<path d="M60 90 h390 M60 150 h390 M60 210 h390 M60 270 h390 M60 330 h390"/>
+<path d="M60 60 v300 M130 60 v300 M200 60 v300 M270 60 v300 M340 60 v300 M410 60 v300"/>
+</g>
+<g>
+<rect x="130" y="90" width="70" height="60" fill="#39d0ff" opacity=".85"/>
+<rect x="270" y="150" width="70" height="60" fill="#39d0ff" opacity=".7"/>
+<rect x="60" y="210" width="70" height="60" fill="#a78bfa" opacity=".8"/>
+<rect x="340" y="270" width="70" height="60" fill="#39d0ff" opacity=".6"/>
+<rect x="200" y="330" width="70" height="60" fill="#a78bfa" opacity=".55"/>
+<rect x="410" y="90" width="40" height="60" fill="#ffb45c" opacity=".75"/>
+</g>
+<text x="82" y="52" fill="#5b6b85" font-family="monospace" font-size="15">GPU · 가장 자주 쓰이는 전문가 일부</text>
+<text x="255" y="388" fill="#5b6b85" font-family="monospace" font-size="15" text-anchor="middle">RAM · 24,576개 전문가 전부</text>
+<g stroke="#39d0ff" stroke-width="2" fill="none" opacity=".8">
+<path d="M470 130 C 540 130 540 200 610 200"/>
+<path d="M470 200 C 540 200 540 130 610 130"/>
+<path d="M470 280 C 540 280 540 255 610 255"/>
+</g>
+<rect x="610" y="105" width="140" height="190" rx="14" fill="#0d1420" stroke="#2a3a55" stroke-width="1.5"/>
+<text x="680" y="150" fill="#c9d6ea" font-family="sans-serif" font-size="17" text-anchor="middle">도우미가</text>
+<text x="680" y="176" fill="#c9d6ea" font-family="sans-serif" font-size="17" text-anchor="middle">먼저 추측</text>
+<text x="680" y="230" fill="#5b6b85" font-family="monospace" font-size="14" text-anchor="middle">guess</text>
+<text x="680" y="256" fill="#5b6b85" font-family="monospace" font-size="14" text-anchor="middle">→ check</text>
+<g stroke="#ffb45c" stroke-width="2" fill="none" opacity=".85">
+<path d="M750 165 C 800 165 800 200 845 200"/>
+</g>
+<rect x="800" y="130" width="120" height="140" rx="14" fill="#120d18" stroke="#55396b" stroke-width="1.5"/>
+<text x="860" y="180" fill="#e6d9f5" font-family="sans-serif" font-size="17" text-anchor="middle">큰 모델이</text>
+<text x="860" y="206" fill="#e6d9f5" font-family="sans-serif" font-size="17" text-anchor="middle">한 번에 검산</text>
+<text x="860" y="248" fill="#a78bfa" font-family="monospace" font-size="14" text-anchor="middle">1.6–1.8×</text>
+<text x="860" y="40" fill="#ffb45c" font-family="monospace" font-size="15" text-anchor="middle">Qwen3.8-Flash-Next · 125B · 10 of 24,576 experts/token</text>
+</svg>
