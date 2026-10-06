@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" font-family="sans-serif">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#39d0ff"/><stop offset="0.55" stop-color="#a78bfa"/><stop offset="1" stop-color="#ffb45c"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="500" fill="#07090f"/>
+  <text x="600" y="70" font-size="42" font-weight="bold" fill="url(#g1)" text-anchor="middle" filter="url(#glow)">DUST — 역전파 없이, 토큰마다 다른 시행</text>
+  <text x="600" y="108" font-size="21" fill="#8aa0b8" text-anchor="middle">정방향 한 번 = 시행 수천 개 병렬 평가 · 보상으로 가중 평균한 잡음이 경사 추정치가 된다</text>
+
+  <!-- token column with different noise per token -->
+  <g>
+    <text x="120" y="160" font-size="17" fill="#5b6b85">토큰마다 다른 잡음 = 각자 다른 개체</text>
+    <g fill="#39d0ff">
+      <rect x="120" y="185" width="52" height="52" rx="9" opacity="0.9" filter="url(#glow)"/>
+      <rect x="184" y="185" width="52" height="52" rx="9" opacity="0.45"/>
+      <rect x="248" y="185" width="52" height="52" rx="9" opacity="0.75"/>
+      <rect x="312" y="185" width="52" height="52" rx="9" opacity="0.3"/>
+      <rect x="376" y="185" width="52" height="52" rx="9" opacity="0.65"/>
+      <rect x="440" y="185" width="52" height="52" rx="9" opacity="0.4"/>
+    </g>
+    <g fill="#a78bfa">
+      <rect x="120" y="249" width="52" height="52" rx="9" opacity="0.35"/>
+      <rect x="184" y="249" width="52" height="52" rx="9" opacity="0.8" filter="url(#glow)"/>
+      <rect x="248" y="249" width="52" height="52" rx="9" opacity="0.5"/>
+      <rect x="312" y="249" width="52" height="52" rx="9" opacity="0.7"/>
+      <rect x="376" y="249" width="52" height="52" rx="9" opacity="0.28"/>
+      <rect x="440" y="249" width="52" height="52" rx="9" opacity="0.6"/>
+    </g>
+    <text x="120" y="336" font-size="15" fill="#5b6b85" font-family="monospace">draw 1 · draw 2 … 시행 K개, 전부 같은 가중치</text>
+  </g>
+
+  <!-- forward pass funnel -->
+  <g stroke="#2a3a55" stroke-width="2" fill="none">
+    <path d="M520 210 C 590 210 600 255 660 255"/>
+    <path d="M520 275 C 590 275 600 255 660 255"/>
+  </g>
+  <rect x="660" y="190" width="180" height="130" rx="16" fill="#0d1420" stroke="#2a3a55" stroke-width="1.5"/>
+  <text x="750" y="240" font-size="19" fill="#c9d6ea" text-anchor="middle">정방향 한 번</text>
+  <text x="750" y="270" font-size="15" fill="#5b6b85" text-anchor="middle" font-family="monospace">forward ×1</text>
+
+  <!-- reward & gradient -->
+  <g stroke="#39d0ff" stroke-width="2" fill="none" opacity="0.8">
+    <path d="M840 255 C 900 255 910 200 960 200"/>
+    <path d="M840 255 C 900 255 910 310 960 310"/>
+  </g>
+  <rect x="960" y="150" width="180" height="100" rx="14" fill="#0d1420" stroke="#2a3a55" stroke-width="1.5"/>
+  <text x="1050" y="192" font-size="17" fill="#ffb45c" text-anchor="middle">손실 감소 = 보상</text>
+  <text x="1050" y="220" font-size="14" fill="#5b6b85" text-anchor="middle" font-family="monospace">reward per token</text>
+  <rect x="960" y="270" width="180" height="100" rx="14" fill="#0d1420" stroke="#39d0ff" stroke-width="1.5" filter="url(#glow)"/>
+  <text x="1050" y="312" font-size="17" fill="#39d0ff" text-anchor="middle">보상 가중 평균</text>
+  <text x="1050" y="340" font-size="14" fill="#5b6b85" text-anchor="middle" font-family="monospace">→ 경사 추정치</text>
+
+  <text x="600" y="440" font-size="19" fill="#8aa0b8" text-anchor="middle">243M 모델이 120배 작은 모델보다 인구 효율적 · 1B 토큰까지 역전파 정렬 유지</text>
+</svg>
