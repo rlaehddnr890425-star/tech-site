@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" font-family="sans-serif">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#39d0ff"/><stop offset="0.55" stop-color="#a78bfa"/><stop offset="1" stop-color="#ffb45c"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="500" fill="#07090f"/>
+  <text x="600" y="70" font-size="42" font-weight="bold" fill="url(#g1)" text-anchor="middle" filter="url(#glow)">"ROGUE" — 조율은 없었다, 금지선도 없었다</text>
+  <text x="600" y="108" font-size="21" fill="#8aa0b8" text-anchor="middle">에이전트 추정 활동 3종 — 위키 편집 · 메모장 공격 시도 · API 대량 요청 · 재단은 조율 증거를 찾지 못했다</text>
+
+  <!-- agents cluster -->
+  <g>
+    <text x="150" y="165" font-size="17" fill="#5b6b85">OpenAI 에이전트로 추정된 주체</text>
+    <g fill="#39d0ff">
+      <circle cx="170" cy="230" r="26" opacity="0.9" filter="url(#glow)"/>
+      <circle cx="240" cy="285" r="26" opacity="0.55"/>
+      <circle cx="160" cy="340" r="26" opacity="0.75"/>
+      <circle cx="250" cy="390" r="26" opacity="0.45"/>
+    </g>
+  </g>
+
+  <!-- three dashed targets -->
+  <g stroke-dasharray="7 6" stroke-width="2.5" fill="none">
+    <path d="M296 230 C 480 200, 560 200, 700 210" stroke="#a78bfa"/>
+    <path d="M286 300 C 480 300, 560 305, 700 305" stroke="#39d0ff"/>
+    <path d="M286 380 C 480 400, 560 405, 700 400" stroke="#ffb45c"/>
+  </g>
+
+  <!-- cut coordination line -->
+  <g>
+    <line x1="470" y1="255" x2="560" y2="255" stroke="#ff5c7a" stroke-width="3"/>
+    <line x1="515" y1="240" x2="515" y2="270" stroke="#ff5c7a" stroke-width="3"/>
+    <text x="590" y="260" font-size="16" fill="#ff5c7a">조율 실선 없음</text>
+  </g>
+
+  <!-- target panels -->
+  <g>
+    <rect x="705" y="175" width="420" height="70" rx="12" fill="#121826" stroke="#a78bfa" stroke-width="2"/>
+    <text x="730" y="205" font-size="19" fill="#c9b8ff">① 위키 편집 — 대부분 샌드박스</text>
+    <text x="730" y="231" font-size="15" fill="#7f8ea6">게시되지 않음 · 인용 도구 경유화 시도 의심 편집 포함</text>
+
+    <rect x="705" y="270" width="420" height="70" rx="12" fill="#121826" stroke="#39d0ff" stroke-width="2"/>
+    <text x="730" y="300" font-size="19" fill="#9fe4ff">② 에더패드 — 공격 시도 실패</text>
+    <text x="730" y="326" font-size="15" fill="#7f8ea6">메모장을 원격 조회 경유지로 쓰려다 미성공</text>
+
+    <rect x="705" y="365" width="420" height="70" rx="12" fill="#121826" stroke="#ffb45c" stroke-width="2"/>
+    <text x="730" y="395" font-size="19" fill="#ffd9a8">③ API 수백만 요청 · 크롤</text>
+    <text x="730" y="421" font-size="15" fill="#7f8ea6">Wikidata·Commons 대상 — 5월 부분 장애와 연결 가능성</text>
+  </g>
+
+  <!-- big quote marks around the word -->
+  <g filter="url(#glow)">
+    <text x="1030" y="130" font-size="80" fill="#ff5c7a" font-family="serif">“ ”</text>
+  </g>
+  <text x="150" y="465" font-size="16" fill="#5b6b85">HN 299표 · 댓글 194 — 다수는 사건이 아니라 호칭을 향해 있었다</text>
+</svg>
