@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" font-family="sans-serif">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#39d0ff"/><stop offset="0.55" stop-color="#a78bfa"/><stop offset="1" stop-color="#ffb45c"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="500" fill="#07090f"/>
+  <text x="600" y="64" font-size="38" font-weight="bold" fill="url(#g1)" text-anchor="middle" filter="url(#glow)">한 문장 → 6시간 → 도시 55개</text>
+  <text x="600" y="100" font-size="20" fill="#8aa0b8" text-anchor="middle">같은 지시문, 갈린 두 숫자 — 53분·10달러 vs 1시간 25분·74달러</text>
+
+  <!-- prompt capsule -->
+  <rect x="70" y="180" width="300" height="150" rx="16" fill="none" stroke="#2a3550" stroke-width="2.5"/>
+  <text x="220" y="230" font-size="19" fill="#5b6b85" text-anchor="middle">지시문 한 문장</text>
+  <text x="220" y="262" font-size="16" fill="#39d0ff" text-anchor="middle">"질문 금지 · 6시간"</text>
+  <text x="220" y="292" font-size="16" fill="#5b6b85" text-anchor="middle">걸작까지 · 질문 없이</text>
+
+  <!-- split arrows -->
+  <g stroke="#39d0ff" stroke-width="2.5" fill="none" stroke-dasharray="9 7">
+    <path d="M380 225 C 470 190, 520 170, 600 165"/>
+    <path d="M380 285 C 470 320, 520 340, 600 345"/>
+  </g>
+
+  <!-- model A -->
+  <rect x="605" y="115" width="250" height="110" rx="14" fill="none" stroke="#39d0ff" stroke-width="2"/>
+  <text x="730" y="155" font-size="18" fill="#8aa0b8" text-anchor="middle">모델 A</text>
+  <text x="730" y="185" font-size="26" font-weight="bold" fill="#39d0ff" text-anchor="middle" filter="url(#glow)">53분 · $10</text>
+  <text x="730" y="210" font-size="14" fill="#5b6b85" text-anchor="middle">단독 작업</text>
+
+  <!-- model B -->
+  <rect x="605" y="295" width="250" height="110" rx="14" fill="none" stroke="#ffb45c" stroke-width="2"/>
+  <text x="730" y="335" font-size="18" fill="#8aa0b8" text-anchor="middle">모델 B</text>
+  <text x="730" y="365" font-size="26" font-weight="bold" fill="#ffb45c" text-anchor="middle" filter="url(#glow)">1시간 25분 · $74</text>
+  <text x="730" y="390" font-size="14" fill="#5b6b85" text-anchor="middle">서브에이전트 6개 병렬</text>
+
+  <!-- cities skyline -->
+  <g filter="url(#glow)">
+    <rect x="920" y="200" width="26" height="120" fill="none" stroke="#a78bfa" stroke-width="2"/>
+    <rect x="956" y="160" width="34" height="160" fill="none" stroke="#a78bfa" stroke-width="2"/>
+    <rect x="1000" y="230" width="22" height="90" fill="none" stroke="#39d0ff" stroke-width="2"/>
+    <rect x="1032" y="180" width="30" height="140" fill="none" stroke="#39d0ff" stroke-width="2"/>
+    <rect x="1072" y="240" width="20" height="80" fill="none" stroke="#ffb45c" stroke-width="2"/>
+    <polygon points="956,160 973,130 990,160" fill="none" stroke="#a78bfa" stroke-width="2"/>
+    <polygon points="1032,180 1047,150 1062,180" fill="none" stroke="#39d0ff" stroke-width="2"/>
+  </g>
+  <text x="1006" y="360" font-size="20" fill="url(#g1)" text-anchor="middle">도시 55개</text>
+  <text x="1006" y="388" font-size="15" fill="#5b6b85" text-anchor="middle">한 번에 뱉은 결과물</text>
+
+  <g stroke="#2a3550" stroke-width="1.5" fill="none" stroke-dasharray="7 9">
+    <path d="M865 170 C 895 190, 900 230, 915 250"/>
+    <path d="M865 350 C 895 340, 900 330, 915 320"/>
+  </g>
+
+  <text x="600" y="462" font-size="15" fill="#3d4c63" text-anchor="middle">테크한잔 — 2026-10-09 · '한계선 시험'으로서의 원샷 실험</text>
+</svg>
