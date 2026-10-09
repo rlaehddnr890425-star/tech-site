@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" font-family="sans-serif">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#39d0ff"/><stop offset="0.55" stop-color="#a78bfa"/><stop offset="1" stop-color="#ffb45c"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="500" fill="#07090f"/>
+  <text x="600" y="66" font-size="40" font-weight="bold" fill="url(#g1)" text-anchor="middle" filter="url(#glow)">16.9MB 안에 들어간 음성 한 덩어리</text>
+  <text x="600" y="102" font-size="20" fill="#8aa0b8" text-anchor="middle">Whistle — 파일 하나(16,919,407바이트)·CPU 전용·첫 글자 11ms·7개 언어</text>
+
+  <!-- device chip -->
+  <rect x="90" y="180" width="230" height="200" rx="18" fill="none" stroke="#2a3550" stroke-width="2.5"/>
+  <text x="205" y="270" font-size="19" fill="#5b6b85" text-anchor="middle">GPU 없는 기기</text>
+  <text x="205" y="300" font-size="17" fill="#39d0ff" text-anchor="middle">whistle.cact</text>
+  <text x="205" y="326" font-size="15" fill="#5b6b85" text-anchor="middle">16.9 MB</text>
+
+  <!-- waveform -->
+  <g stroke="#a78bfa" stroke-width="4" stroke-linecap="round" filter="url(#glow)">
+    <line x1="400" y1="330" x2="400" y2="250"/>
+    <line x1="425" y1="350" x2="425" y2="230"/>
+    <line x1="450" y1="322" x2="450" y2="258"/>
+    <line x1="475" y1="358" x2="475" y2="222"/>
+    <line x1="500" y1="336" x2="500" y2="244"/>
+    <line x1="525" y1="352" x2="525" y2="228"/>
+  </g>
+  <text x="462" y="392" font-size="16" fill="#8aa0b8" text-anchor="middle">말하는 순간</text>
+
+  <!-- arrows into outputs -->
+  <g stroke="#39d0ff" stroke-width="2.5" fill="none" stroke-dasharray="9 7">
+    <path d="M320 240 C 420 170, 520 150, 610 150"/>
+    <path d="M320 280 C 420 260, 520 250, 610 250"/>
+    <path d="M320 320 C 420 360, 520 355, 610 355"/>
+  </g>
+
+  <!-- three outputs -->
+  <g>
+    <rect x="615" y="118" width="490" height="70" rx="12" fill="#0d1420" stroke="#39d0ff" stroke-width="2"/>
+    <text x="640" y="148" font-size="20" fill="#39d0ff">① 받아쓰기</text>
+    <text x="640" y="174" font-size="16" fill="#8aa0b8">30초까지 · 7개 언어 · 언어 자동 감지</text>
+  </g>
+  <g>
+    <rect x="615" y="216" width="490" height="70" rx="12" fill="#0d1420" stroke="#a78bfa" stroke-width="2"/>
+    <text x="640" y="246" font-size="20" fill="#a78bfa">② 단어별 시각표</text>
+    <text x="640" y="272" font-size="16" fill="#8aa0b8">단어마다 시작·끝·확률</text>
+  </g>
+  <g>
+    <rect x="615" y="318" width="490" height="70" rx="12" fill="#0d1420" stroke="#ffb45c" stroke-width="2"/>
+    <text x="640" y="348" font-size="20" fill="#ffb45c">③ 음성 벡터</text>
+    <text x="640" y="374" font-size="16" fill="#8aa0b8">글자 없이 80ms마다 한 행 · 검색·화자 비교</text>
+  </g>
+
+  <text x="600" y="455" font-size="17" fill="#5b6b85" text-anchor="middle">음성은 기기를 벗어나지 않는다 — Apache 2.0, 언어모델과 같은 실행 파일에 얹힌다</text>
+</svg>
