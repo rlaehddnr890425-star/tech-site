@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" font-family="sans-serif">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#39d0ff"/><stop offset="0.55" stop-color="#a78bfa"/><stop offset="1" stop-color="#ffb45c"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="500" fill="#07090f"/>
+  <text x="600" y="66" font-size="40" font-weight="bold" fill="url(#g1)" text-anchor="middle" filter="url(#glow)">작은 런타임 섬이 구름 본토로 건너간다</text>
+  <text x="600" y="102" font-size="20" fill="#8aa0b8" text-anchor="middle">Deno → Cloudflare (2026-10-09) · 런타임 패치 12개월 → 개발 종료 · Deploy 6개월 후 종료 · JSR는 계속</text>
+
+  <!-- left island: Deno -->
+  <g>
+    <ellipse cx="230" cy="360" rx="170" ry="46" fill="#0d1524" stroke="#39d0ff" stroke-width="2"/>
+    <rect x="150" y="230" width="160" height="120" rx="14" fill="#0f1a2e" stroke="#39d0ff" stroke-width="2.5"/>
+    <text x="230" y="285" font-size="34" font-weight="bold" fill="#39d0ff" text-anchor="middle">Deno</text>
+    <text x="230" y="320" font-size="16" fill="#8aa0b8" text-anchor="middle">런타임 · Deploy · JSR</text>
+    <!-- countdown flags -->
+    <rect x="120" y="170" width="100" height="34" rx="8" fill="#1a1010" stroke="#ff7ab8" stroke-width="1.6"/>
+    <text x="170" y="193" font-size="15" fill="#ff7ab8" text-anchor="middle">패치 12개월</text>
+    <rect x="245" y="170" width="100" height="34" rx="8" fill="#1a1010" stroke="#ff7ab8" stroke-width="1.6"/>
+    <text x="295" y="193" font-size="15" fill="#ff7ab8" text-anchor="middle">Deploy 6개월</text>
+    <!-- JSR stays -->
+    <rect x="185" y="416" width="92" height="30" rx="8" fill="#0f1a2e" stroke="#39d0ff" stroke-width="1.4" stroke-dasharray="4 3"/>
+    <text x="231" y="436" font-size="14" fill="#39d0ff" text-anchor="middle">JSR 존속</text>
+  </g>
+
+  <!-- bridge: Celld cargo -->
+  <g>
+    <path d="M 400 340 C 540 240, 660 240, 790 330" stroke="url(#g1)" stroke-width="4" fill="none" filter="url(#glow)"/>
+    <rect x="540" y="238" width="130" height="46" rx="10" fill="#131326" stroke="#a78bfa" stroke-width="2"/>
+    <text x="605" y="262" font-size="18" font-weight="bold" fill="#a78bfa" text-anchor="middle">Celld</text>
+    <text x="605" y="278" font-size="12" fill="#8aa0b8" text-anchor="middle">실제 화물 · Apache 2.0</text>
+    <polygon points="770,318 796,332 768,344" fill="#ffb45c"/>
+  </g>
+
+  <!-- right mainland: Cloudflare -->
+  <g>
+    <ellipse cx="960" cy="360" rx="220" ry="56" fill="#101a12" stroke="#ffb45c" stroke-width="2"/>
+    <path d="M 810 330 q 20 -70 90 -70 q 15 -46 70 -40 q 60 -22 95 26 q 60 4 40 60 q 30 34 -20 54 l -345 0 q -30 -14 0 -30 z" fill="#14231a" stroke="#ffb45c" stroke-width="2.5" opacity="0.95"/>
+    <text x="960" y="285" font-size="30" font-weight="bold" fill="#ffb45c" text-anchor="middle">Cloudflare</text>
+    <text x="960" y="318" font-size="16" fill="#8aa0b8" text-anchor="middle">Workers · workerd · Durable Objects</text>
+    <rect x="880" y="336" width="160" height="30" rx="8" fill="#0f1a2e" stroke="#39d0ff" stroke-width="1.4"/>
+    <text x="960" y="356" font-size="14" fill="#39d0ff" text-anchor="middle">통합 목표 = 자체 호스팅</text>
+  </g>
+
+  <text x="600" y="472" font-size="16" fill="#5a6f88" text-anchor="middle">해커뉴스 표 1,055 · "대항마 소멸"이 아니라 "서버리스 모델이 남의 서버로" — 테크한잔</text>
+</svg>
