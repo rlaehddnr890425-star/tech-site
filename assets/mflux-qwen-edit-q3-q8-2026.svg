@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" font-family="sans-serif">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#39d0ff"/><stop offset="0.55" stop-color="#a78bfa"/><stop offset="1" stop-color="#ffb45c"/>
+    </linearGradient>
+    <linearGradient id="gq3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1f4fd8"/><stop offset="1" stop-color="#3fd88a"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="500" fill="#07090f"/>
+  <text x="600" y="66" font-size="40" font-weight="bold" fill="url(#g1)" text-anchor="middle" filter="url(#glow)">가중치를 56.6GB에서 24.7GB로 깎았을 때</text>
+  <text x="600" y="102" font-size="20" fill="#8aa0b8" text-anchor="middle">Qwen-Image-Edit 2511 · MFlux Q8과 Q3를 같은 맥(M3 Ultra·96GB)에서 붙여 본 결과</text>
+
+  <!-- left bar Q8 -->
+  <rect x="120" y="170" width="420" height="240" rx="16" fill="none" stroke="#2a3550" stroke-width="2.5"/>
+  <text x="330" y="208" font-size="20" fill="#39d0ff" text-anchor="middle">Q8 · 37.5GB</text>
+  <rect x="170" y="235" width="320" height="120" rx="8" fill="url(#gq3)"/>
+  <text x="330" y="392" font-size="18" fill="#7ee2a8" text-anchor="middle">지시대로 매끄러운 그라디언트</text>
+  <text x="330" y="248" font-size="13" fill="#cfe8ff" text-anchor="middle">피크 38.19GB · 스텝당 3분 43초</text>
+
+  <!-- right bar Q3 -->
+  <rect x="660" y="170" width="420" height="240" rx="16" fill="none" stroke="#2a3550" stroke-width="2.5"/>
+  <text x="870" y="208" font-size="20" fill="#ffb45c" text-anchor="middle">Q3 · 24.7GB</text>
+  <g>
+    <rect x="710" y="235" width="320" height="120" rx="8" fill="#101820"/>
+    <g fill="#3f7f6f">
+      <rect x="716" y="241" width="10" height="10"/><rect x="742" y="252" width="10" height="10"/><rect x="770" y="244" width="10" height="10"/>
+      <rect x="800" y="260" width="10" height="10"/><rect x="830" y="248" width="10" height="10"/><rect x="860" y="266" width="10" height="10"/>
+      <rect x="890" y="252" width="10" height="10"/><rect x="920" y="240" width="10" height="10"/><rect x="950" y="262" width="10" height="10"/>
+      <rect x="980" y="250" width="10" height="10"/><rect x="1008" y="244" width="10" height="10"/>
+      <rect x="722" y="286" width="10" height="10"/><rect x="752" y="296" width="10" height="10"/><rect x="782" y="288" width="10" height="10"/>
+      <rect x="812" y="300" width="10" height="10"/><rect x="842" y="292" width="10" height="10"/><rect x="872" y="304" width="10" height="10"/>
+      <rect x="902" y="294" width="10" height="10"/><rect x="932" y="286" width="10" height="10"/><rect x="962" y="300" width="10" height="10"/>
+      <rect x="992" y="292" width="10" height="10"/><rect x="1018" y="302" width="10" height="10"/>
+      <rect x="730" y="326" width="10" height="10"/><rect x="760" y="336" width="10" height="10"/><rect x="790" y="328" width="10" height="10"/>
+      <rect x="820" y="340" width="10" height="10"/><rect x="850" y="330" width="10" height="10"/><rect x="880" y="342" width="10" height="10"/>
+      <rect x="910" y="332" width="10" height="10"/><rect x="940" y="326" width="10" height="10"/><rect x="970" y="338" width="10" height="10"/>
+      <rect x="1000" y="330" width="10" height="10"/><rect x="1020" y="340" width="10" height="10"/>
+    </g>
+    <text x="330" y="392" font-size="18" fill="transparent" text-anchor="middle"></text>
+  </g>
+  <text x="870" y="392" font-size="18" fill="#ff9d9d" text-anchor="middle">지시 무시 · 회색 알갱이만</text>
+  <text x="870" y="248" font-size="13" fill="#ffd9a8" text-anchor="middle">피크 25.61GB · 첫 스텝만 2분 18초</text>
+
+  <!-- bottom note -->
+  <text x="600" y="458" font-size="17" fill="#5b6b85" text-anchor="middle">동일 시드 42 · 512×512 · 4 스텝 · Apache 2.0 · 커뮤니티 양자화 6종(56.6→24.7GB)</text>
+</svg>
