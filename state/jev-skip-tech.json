@@ -1,15 +1,14 @@
 {
-  "site": "tech",
-  "slug": "tg-semicolon-hijack-2026",
-  "date": "2026-10-11-am",
-  "jev": "picked 3 (useful 0.51, 7후보) — Telegram Desktop one-click account takeover (HN 50029123, 408표)",
-  "consecutive_skip": 0,
-  "type": "이슈 해설 (ops/notes/tech-type-history.txt 갱신)",
-  "gate": "first_pass_review PASS — 1차 FAIL 1건('작성자:' 표기) 즉시 제거 후 통과. 라이브 포스트 200·히어로 SVG 200·홈 카드 1건·sitemap 1건 실측",
-  "similarity": "8연속 단어 일치 0 (beaksec 원문 전문 대비 ops/hz_verify/2026-10-11-tg-semicolon/factcheck.py, 코드블록 제외 기준)",
-  "humanize": "light 윤문(리드·결론 문장 다듬기·'plus' 혼입 제거)·수치·URL 대조 게이트 PASS(변경률 1.6%·누락 0)",
-  "body_chars": "4,319자(공백 제외·main 전체)",
-  "facts_verified": "CVE-2026-107181·CVSS 8.1·7.2.8까지 취약·패치 커밋 db3405699f(9/16)·7.2.9 배포 9/17·자동다운 8MiB·ZDI 제보 6/25·종결 9/30·글 공개 10/3(10/7 갱신)·Windows 6.9.3 확인 — 전부 beaksec 원문 전문에서 직접 확인",
-  "commit": "b813a62 (origin main + brand main)",
-  "note": " 라이브 반영은 brand(tech-site) 푸시 필수 — origin(techhanjan)은 미사용"
+ "site": "tech",
+ "slug": "ai-10min-persistence-rct-2026",
+ "date": "2026-10-12-pm",
+ "jev": "picked 2 (useful 0.56, 6후보) — UC 버클리·CMU 'AI 10분 인내력' RCT (HN 71표)",
+ "consecutive_skip": 0,
+ "gate": "first_pass_review PASS — push 허용",
+ "similarity": "원문(버클리 보도자료·arXiv·프로젝트 페이지) 대비 8연속 단어 일치 0 — ops/hz_verify/2026-10-12-ai10min/simcheck.py",
+ "humanize": "light 윤문 19치환(변경률 7.0%)·수치·URL 대조 게이트 PASS(누락 0)",
+ "body_chars": "3,794자(공백 제외·main 전체)",
+ "facts_verified": "N=354/667/201·풀이율 0.57vs0.73·스킵 0.20vs0.11·실험2 0.71vs0.77·실험3 0.76vs0.89·61% 답직접 유형·Cohen's d·p값 — arXiv 2604.04721 HTML 전문과 프로젝트 페이지에서 직접 확인. HN 71표·180댓글은 HN 스레드 실측. COLM 발표·10/9 버클리 발표는 보도자료 확인",
+ "commit": "494c188 (origin main + brand main) — 라이브 포스트 200·홈 카드 1건·sitemap 함유·히어로 SVG 200 실측",
+ "type": "이슈 해설 (ops/notes/tech-type-history.txt 갱신)"
 }
