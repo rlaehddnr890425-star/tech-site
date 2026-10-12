@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07090f"/>
+      <stop offset="1" stop-color="#0b1120"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#39d0ff"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="fall" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#39d0ff"/>
+      <stop offset="0.55" stop-color="#39d0ff"/>
+      <stop offset="0.62" stop-color="#fb7185"/>
+      <stop offset="1" stop-color="#fb7185"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <!-- left: sidebar AI being pulled out -->
+  <g stroke="#2a3b5c" fill="none" stroke-width="2">
+    <rect x="70" y="120" width="300" height="260" rx="14"/>
+    <rect x="250" y="120" width="120" height="260" rx="10" stroke="#39d0ff"/>
+  </g>
+  <text x="160" y="100" font-family="monospace" font-size="17" fill="#39d0ff" text-anchor="middle">풀이 세션 10분</text>
+  <text x="310" y="100" font-family="monospace" font-size="15" fill="#8aa0c0" text-anchor="middle">사이드바 AI</text>
+  <g stroke="#5b6f95" stroke-width="3" stroke-linecap="round">
+    <line x1="100" y1="170" x2="215" y2="170"/>
+    <line x1="100" y1="205" x2="190" y2="205"/>
+    <line x1="100" y1="240" x2="225" y2="240"/>
+  </g>
+  <text x="310" y="215" font-family="monospace" font-size="15" fill="#8aa0c0" text-anchor="middle">답 · 힌트</text>
+  <text x="310" y="245" font-family="monospace" font-size="15" fill="#8aa0c0" text-anchor="middle">즉시</text>
+  <!-- extraction arrow -->
+  <g filter="url(#glow)">
+    <line x1="380" y1="250" x2="470" y2="250" stroke="url(#neon)" stroke-width="5"/>
+    <polygon points="470,240 494,250 470,260" fill="#a78bfa"/>
+  </g>
+  <text x="430" y="232" font-family="monospace" font-size="14" fill="#a78bfa" text-anchor="middle">예고 없이 제거</text>
+  <!-- right: solve-rate cliff chart -->
+  <g>
+    <line x1="560" y1="390" x2="1130" y2="390" stroke="#2a3b5c" stroke-width="2"/>
+    <line x1="560" y1="120" x2="560" y2="390" stroke="#2a3b5c" stroke-width="2"/>
+    <text x="545" y="130" font-family="monospace" font-size="13" fill="#8aa0c0" text-anchor="end">0.73</text>
+    <text x="545" y="290" font-family="monospace" font-size="13" fill="#8aa0c0" text-anchor="end">0.57</text>
+    <line x1="560" y1="125" x2="1130" y2="125" stroke="#1b2740" stroke-width="1" stroke-dasharray="4 6"/>
+    <line x1="560" y1="285" x2="1130" y2="285" stroke="#1b2740" stroke-width="1" stroke-dasharray="4 6"/>
+    <line x1="880" y1="110" x2="880" y2="400" stroke="#a78bfa" stroke-width="1.5" stroke-dasharray="6 8"/>
+    <text x="880" y="96" font-family="monospace" font-size="14" fill="#a78bfa" text-anchor="middle">AI 제거 이후 3문제</text>
+    <polyline points="560,150 640,138 720,142 800,132 880,128" fill="none" stroke="#39d0ff" stroke-width="4"/>
+    <polyline points="880,128 960,180 1040,250 1120,288" fill="none" stroke="#fb7185" stroke-width="4"/>
+    <g filter="url(#glow)"><circle cx="880" cy="128" r="7" fill="#39d0ff"/></g>
+    <text x="1120" y="320" font-family="monospace" font-size="15" fill="#fb7185" text-anchor="end">풀이율 0.57로</text>
+    <g stroke="#f59e0b" stroke-width="3" fill="none">
+      <line x1="960" y1="430" x2="985" y2="430"/>
+      <line x1="1000" y1="430" x2="1040" y2="430"/>
+      <line x1="1055" y1="430" x2="1075" y2="430"/>
+    </g>
+    <text x="1120" y="462" font-family="monospace" font-size="14" fill="#f59e0b" text-anchor="end">스킵 0.11 → 0.20</text>
+  </g>
+  <!-- bottom-left caption -->
+  <text x="70" y="440" font-family="monospace" font-size="15" fill="#8aa0c0">N=1,222 · 무작위 대조 3실험 (분수·독해)</text>
+  <text x="70" y="466" font-family="monospace" font-size="15" fill="#5b6f95">저하는 '답을 받은' 그룹에만 집중 — 힌트형은 대조군과 같았다</text>
+</svg>

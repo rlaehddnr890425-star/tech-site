@@ -1,0 +1,6 @@
+1. Karpathy "LLM 능력 격차 퍼널" 4단계 수치 (10/11 HN 140표·댓글 180) — 6B/1-2B/20M/5000명 | https://news.ycombinator.com/item?id=50047422
+2. 버클리·CMU RCT N=1,222 — AI 10분 사용 후 인내력·독립성능 저하 (COLM 2026 피어리뷰) | https://arxiv.org/html/2604.04721v1
+3. 500B 토큰 들고 FPS 게임 디컴파일한 AI 에이전트 실험기 (HN 150표) | https://momo5502.com/posts/2026-10-09-game-decompilation/
+4. Every Model That Can Be Run On 10-16GB VRAM Ranked (Reddit LocalLLaMA) | https://www.reddit.com/r/LocalLLaMA/comments/1x3gpyi/
+5. OpenMed 3.0 — Apache-2.0 완전 로컬 임상 AI (Reddit LocalLLaMA) | https://www.reddit.com/r/LocalLLaMA/comments/1x37z7z/
+6. Deno→Cloudflare 흡수 후 개발자 반응 정리 | https://www.robertglasbey.com/posts/cloudflare-buys-deno-what-devs-are-saying.html
