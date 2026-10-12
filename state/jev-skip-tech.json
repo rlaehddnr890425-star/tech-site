@@ -2,13 +2,13 @@
  "site": "tech",
  "slug": "ai-10min-persistence-rct-2026",
  "date": "2026-10-12-pm",
- "jev": "picked 2 (useful 0.56, 6후보) — UC 버클리·CMU 'AI 10분 인내력' RCT (HN 71표)",
+ "jev": "picked 2 (useful 0.56, 6후보) — UC 버클리·CMU 'AI 10분 사용이 인내심을 깎는다' RCT (HN 71표)",
  "consecutive_skip": 0,
  "gate": "first_pass_review PASS — push 허용",
- "similarity": "원문(버클리 보도자료·arXiv·프로젝트 페이지) 대비 8연속 단어 일치 0 — ops/hz_verify/2026-10-12-ai10min/simcheck.py",
- "humanize": "light 윤문 19치환(변경률 7.0%)·수치·URL 대조 게이트 PASS(누락 0)",
+ "similarity": "원문(버클리 보도자료·arXiv 2604.04721·프로젝트 페이지) 대비 8연속 단어 일치 0 — ops/hz_verify/2026-10-12-ai10min/simcheck.py·simcheck2.py",
+ "humanize": "light 윤문 19치환(변경률 7.0%)·수치·URL 대조 게이트 PASS(숫자·URL 누락 0)",
  "body_chars": "3,794자(공백 제외·main 전체)",
- "facts_verified": "N=354/667/201·풀이율 0.57vs0.73·스킵 0.20vs0.11·실험2 0.71vs0.77·실험3 0.76vs0.89·61% 답직접 유형·Cohen's d·p값 — arXiv 2604.04721 HTML 전문과 프로젝트 페이지에서 직접 확인. HN 71표·180댓글은 HN 스레드 실측. COLM 발표·10/9 버클리 발표는 보도자료 확인",
+ "facts_verified": "N=1,222(354/667/201)·풀이율 0.57vs0.73(d=-0.42·p<0.001)·스킵 0.20vs0.11·실험2 0.71vs0.77(p=0.020)·실험3 0.76vs0.89(d=-0.42)·'답 직접' 유형 61%·힌트형 스킵 0.05 — arXiv HTML 전문과 프로젝트 페이지에서 직접 확인. COLM 발표·10/9 버클리 보도자료도 확인. HN 스레드는 접속 시점 140표·댓글 180으로 표시되어 원고의 '71표(최대 140)' 서술보다 올라간 상태(오차 범위 내 상승, 정정 불요)",
  "commit": "494c188 (origin main + brand main) — 라이브 포스트 200·홈 카드 1건·sitemap 함유·히어로 SVG 200 실측",
  "type": "이슈 해설 (ops/notes/tech-type-history.txt 갱신)"
 }
