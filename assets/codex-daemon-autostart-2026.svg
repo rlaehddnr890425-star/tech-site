@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" font-family="'Pretendard','Apple SD Gothic Neo',sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07090f"/><stop offset="1" stop-color="#0b1220"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <g stroke="#16324a" stroke-width="1" opacity="0.5">
+    <line x1="0" y1="125" x2="1200" y2="125"/><line x1="0" y1="250" x2="1200" y2="250"/><line x1="0" y1="375" x2="1200" y2="375"/>
+  </g>
+  <!-- terminal window -->
+  <g>
+    <rect x="90" y="120" width="420" height="260" rx="14" fill="#0d1420" stroke="#39d0ff" stroke-width="2" filter="url(#glow)"/>
+    <rect x="90" y="120" width="420" height="38" rx="14" fill="#101a2a"/>
+    <circle cx="118" cy="139" r="6" fill="#ff7ab8"/><circle cx="140" cy="139" r="6" fill="#ffb45c"/><circle cx="162" cy="139" r="6" fill="#39d0ff"/>
+    <text x="118" y="210" fill="#7f93ad" font-size="22">$ codex</text>
+    <text x="118" y="248" fill="#39d0ff" font-size="22">▸ 세션은 열렸다 — 그런데 창을 닫아도</text>
+    <text x="118" y="286" fill="#39d0ff" font-size="22">▸ 백엔드는 PID 1에 살아 남는다</text>
+    <text x="118" y="336" fill="#5a6d85" font-size="18">~/.codex/packages/app-server-daemon · 374MB</text>
+  </g>
+  <!-- arrow to daemon -->
+  <g stroke="#a78bfa" stroke-width="2.5" fill="none" stroke-dasharray="8 7">
+    <path d="M510 250 C 620 250, 650 230, 730 225"/>
+  </g>
+  <text x="560" y="215" fill="#a78bfa" font-size="19">은밀 설치</text>
+  <!-- ghost daemon -->
+  <g filter="url(#glow)">
+    <path d="M760 320 L760 200 Q760 140 830 140 Q900 140 900 200 L900 320 L880 300 L860 320 L840 300 L820 320 L800 300 L780 320 Z"
+          fill="#141b2e" stroke="#a78bfa" stroke-width="3"/>
+    <circle cx="806" cy="212" r="10" fill="#39d0ff"/>
+    <circle cx="854" cy="212" r="10" fill="#39d0ff"/>
+    <path d="M800 262 Q830 282 860 262" stroke="#ff7ab8" stroke-width="3.5" fill="none"/>
+  </g>
+  <text x="770" y="370" fill="#a78bfa" font-size="24" font-weight="700">app-server 데몬</text>
+  <text x="778" y="400" fill="#7f93ad" font-size="18">--managed-daemon · TTY 없음</text>
+  <!-- update loop -->
+  <g fill="none" stroke="#ffb45c" stroke-width="3">
+    <path d="M950 190 A 55 55 0 1 1 946 188" transform="translate(30,30)"/>
+  </g>
+  <path d="M1010 176 l 16 20 l -24 4 z" fill="#ffb45c"/>
+  <text x="960" y="150" fill="#ffb45c" font-size="20" font-weight="700">매시 자가갱신</text>
+  <text x="952" y="290" fill="#ffb45c" font-size="18">5분 후 1차 체크</text>
+  <text x="952" y="318" fill="#7f93ad" font-size="17">60초 유예 후 턴 강제 종료</text>
+  <!-- bottom banner -->
+  <text x="92" y="66" fill="#e8f2ff" font-size="34" font-weight="800">Codex CLI가 창 뒤에 심어 두는 것</text>
+  <text x="92" y="460" fill="#5a6d85" font-size="18">HN 449표 · 이슈 #48195 — “제발 기본값을 끄거나, 한 번만 물어봐라”</text>
+</svg>
