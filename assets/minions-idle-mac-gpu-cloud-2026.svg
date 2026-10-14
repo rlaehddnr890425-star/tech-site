@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" font-family="'Pretendard','Apple SD Gothic Neo',sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07090f"/><stop offset="1" stop-color="#0b1220"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#39d0ff"/><stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <text x="600" y="62" text-anchor="middle" font-size="34" font-weight="800" fill="url(#neon)" filter="url(#glow)">Minions — 논던 맥들의 GPU를 하나로 묶는 큐</text>
+  <text x="600" y="98" text-anchor="middle" font-size="17" fill="#8b93a7">스케줄러 없음 · 실행자가 일감을 집어간다(pull) · 승자는 PostgreSQL이 가린다</text>
+
+  <!-- Minion Server -->
+  <rect x="70" y="170" width="230" height="140" rx="14" fill="#0f1626" stroke="#39d0ff" stroke-width="1.6"/>
+  <text x="185" y="205" text-anchor="middle" font-size="19" font-weight="700" fill="#e8ecf5">Minion Server</text>
+  <text x="185" y="233" text-anchor="middle" font-size="13.5" fill="#8b93a7">요청 → 서브태스크 분할</text>
+  <text x="185" y="255" text-anchor="middle" font-size="13.5" fill="#8b93a7">REST API · 유일한 창구</text>
+  <text x="185" y="285" text-anchor="middle" font-size="13" fill="#ffb45c">FIFO + 선호 큐</text>
+
+  <!-- PostgreSQL -->
+  <rect x="380" y="170" width="230" height="140" rx="14" fill="#0f1626" stroke="#a78bfa" stroke-width="1.6"/>
+  <text x="495" y="205" text-anchor="middle" font-size="19" font-weight="700" fill="#e8ecf5">PostgreSQL 대장</text>
+  <text x="495" y="233" text-anchor="middle" font-size="13.5" fill="#8b93a7">큐 · 소유권 · 심박 신호</text>
+  <text x="495" y="255" text-anchor="middle" font-size="13.5" fill="#8b93a7">고유 제약 = 승자 독식</text>
+  <text x="495" y="285" text-anchor="middle" font-size="13" fill="#ffb45c">insert 한 건만 성공</text>
+  <line x1="300" y1="240" x2="380" y2="240" stroke="#39d0ff" stroke-width="1.4" stroke-dasharray="5 4"/>
+
+  <!-- Watchdog -->
+  <rect x="380" y="360" width="230" height="86" rx="14" fill="#0f1626" stroke="#ff7ab8" stroke-width="1.4"/>
+  <text x="495" y="395" text-anchor="middle" font-size="17" font-weight="700" fill="#e8ecf5">Watchdog</text>
+  <text x="495" y="422" text-anchor="middle" font-size="13" fill="#8b93a7">5분 실종 → 미완건 재큐잉</text>
+  <line x1="495" y1="310" x2="495" y2="360" stroke="#ff7ab8" stroke-width="1.2" stroke-dasharray="4 4"/>
+
+  <!-- Executors: Macs -->
+  <g filter="url(#glow)">
+    <rect x="740" y="140" width="180" height="72" rx="10" fill="#0f1626" stroke="#39d0ff" stroke-width="1.4"/>
+    <text x="830" y="170" text-anchor="middle" font-size="15" font-weight="700" fill="#e8ecf5">맥 #1 · Ollama</text>
+    <text x="830" y="193" text-anchor="middle" font-size="12" fill="#8b93a7">LLM 완성 · GPU 로컬</text>
+    <rect x="960" y="230" width="180" height="72" rx="10" fill="#0f1626" stroke="#39d0ff" stroke-width="1.4"/>
+    <text x="1050" y="260" text-anchor="middle" font-size="15" font-weight="700" fill="#e8ecf5">맥 #2 · transformers</text>
+    <text x="1050" y="283" text-anchor="middle" font-size="12" fill="#8b93a7">임베딩 생성 · GPU 로컬</text>
+    <rect x="740" y="320" width="180" height="72" rx="10" fill="#0f1626" stroke="#5b647a" stroke-width="1.2" stroke-dasharray="6 4"/>
+    <text x="830" y="350" text-anchor="middle" font-size="15" font-weight="700" fill="#8b93a7">맥 #3 · 덮개 닫힘</text>
+    <text x="830" y="373" text-anchor="middle" font-size="12" fill="#5b647a">일감 반환 → 재큐</text>
+  </g>
+
+  <!-- pull arrows -->
+  <path d="M 740 300 C 660 300 640 250 612 244" stroke="#39d0ff" stroke-width="1.6" fill="none" marker-end="url(#arr)"/>
+  <path d="M 960 266 C 900 266 700 260 612 252" stroke="#39d0ff" stroke-width="1.2" fill="none" opacity=".6"/>
+  <path d="M 740 340 C 660 340 620 300 612 270" stroke="#5b647a" stroke-width="1.1" fill="none" stroke-dasharray="4 4" opacity=".8"/>
+  <defs><marker id="arr" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#39d0ff"/></marker></defs>
+  <text x="700" y="288" text-anchor="middle" font-size="13" fill="#39d0ff">pull (집어감)</text>
+
+  <!-- S3 -->
+  <rect x="1000" y="390" width="130" height="60" rx="10" fill="#0f1626" stroke="#ffb45c" stroke-width="1.2"/>
+  <text x="1065" y="416" text-anchor="middle" font-size="14" font-weight="700" fill="#ffb45c">S3 저장소</text>
+  <text x="1065" y="437" text-anchor="middle" font-size="11.5" fill="#8b93a7">입출력 우회</text>
+  <path d="M 1050 302 C 1055 340 1062 360 1064 390" stroke="#ffb45c" stroke-width="1.2" fill="none" stroke-dasharray="5 4"/>
+
+  <text x="600" y="475" text-anchor="middle" font-size="12.5" fill="#5b647a">arXiv 2610.12970 · 애플 사내 운영 시스템 · 테크한잔</text>
+</svg>
