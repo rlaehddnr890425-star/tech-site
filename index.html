@@ -45,6 +45,12 @@
 <div class="grid">
 <div class="card">
 <span class="cat hot">Trending</span>
+<h3><a href="posts/rust-lifetime-hole-11yr-2026.html">10/13 해커뉴스 694표 — 11년간 Rust가 못 잡은 '수명 구멍', 12줄 코드가 증명했다</a></h3>
+<p>rust-lang/rust 이슈 #164250. 'static 이상만 받으라는 구조체에 짧은 수명 참조를 넣는 대입을 차입 검사기가 눈감아 준다 — 공변 필드라는 이유로 '지금'만 검사하기 때문. 여기에 소멸자(Drop)의 무신이 겹치면 죽은 지역 변수가 정적 저장소에 '영원히' 보관되고 asan이 stack-use-after-scope를 외친다. 11년이나 잠든 이유(악의적 Drop을 손으로 짜야 엮임), P-high로 낮춘 타입 팀의 변명, 내 코드가 안전한지 3단계로 확인하는 절차까지.</p>
+<div class="foot"><span>발행 2026-10-14</span><span>읽는 시간 8분</span></div>
+</div>
+<div class="card">
+<span class="cat hot">Trending</span>
 <h3><a href="posts/minions-idle-mac-gpu-cloud-2026.html">10/9 arXiv 3쪽 논문 — 애플이 논던 직원 맥 수천 대의 GPU로 추론 클러스터를 조립하는 부품 5개</a></h3>
 <p>애플이 사내에서 이미 굴러가는 분산 추론 시스템 Minions의 설계도를 3쪽 논문으로 공개했다(HN 218표). 핵심은 스케줄러가 없다는 것 — 맥마다 상주하는 실행자가 일감을 스스로 집어가리고, 같은 건을 노린 경쟁은 PostgreSQL 고유 제약 하나가 승자만 남긴다. 임베딩은 transformers, LLM은 Ollama, 죽은 기기의 일은 5분 심박 신호와 워치독이 되찾는다. '10시간 대기 → 분 단위'라는 정성표의 진실 게임과, 우리 맥 2~3대로 따라 조립하는 SQL 4개·폴링 루프 한 개.</p>
 <div class="foot"><span>발행 2026-10-14</span><span>읽는 시간 8분</span></div>
