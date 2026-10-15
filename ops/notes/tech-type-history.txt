@@ -7,3 +7,4 @@
 2026-10-13-pm 도구/실습 (안드로이드 2대 클러스터 27B 로컬 구동 — C++ RPC 분할)
 2026-10-14-am 도구/실습 (애플 Minions idle Mac GPU 클라우드 — pull 큐+PostgreSQL 승자독식 재조립)
 2026-10-15-am 이슈 해설 (OpenCode 2.0 — anoma.ly 노트)
+2026-10-15-pm 이슈 해설 (OpenCode 2.0 — 상주 서버+코드 모드 기본값)
