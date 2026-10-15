@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" font-family="sans-serif">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#39d0ff"/><stop offset="0.55" stop-color="#a78bfa"/><stop offset="1" stop-color="#ffb45c"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="500" fill="#07090f"/>
+  <text x="600" y="62" font-size="38" font-weight="bold" fill="url(#g1)" text-anchor="middle" filter="url(#glow)">240억 개 중 깨어나는 건 20억 개뿐</text>
+  <text x="600" y="100" font-size="20" fill="#8aa0b8" text-anchor="middle">LFM2.5-24B-A2B — 활성 2B MoE·M5 Max에서 초당 184토큰·에이전트 벤치 8개 중 5개 리드</text>
+
+  <!-- expert grid: mostly dim, 4 awake -->
+  <g id="experts">
+    <g fill="#1a2233">
+      <rect x="120" y="160" width="44" height="44" rx="8"/><rect x="176" y="160" width="44" height="44" rx="8"/><rect x="232" y="160" width="44" height="44" rx="8"/><rect x="288" y="160" width="44" height="44" rx="8"/><rect x="344" y="160" width="44" height="44" rx="8"/>
+      <rect x="120" y="216" width="44" height="44" rx="8"/><rect x="176" y="216" width="44" height="44" rx="8"/><rect x="288" y="216" width="44" height="44" rx="8"/><rect x="344" y="216" width="44" height="44" rx="8"/>
+      <rect x="120" y="272" width="44" height="44" rx="8"/><rect x="232" y="272" width="44" height="44" rx="8"/><rect x="288" y="272" width="44" height="44" rx="8"/><rect x="344" y="272" width="44" height="44" rx="8"/>
+      <rect x="176" y="328" width="44" height="44" rx="8"/><rect x="232" y="328" width="44" height="44" rx="8"/><rect x="344" y="328" width="44" height="44" rx="8"/>
+    </g>
+    <g fill="url(#g1)" filter="url(#glow)">
+      <rect x="232" y="216" width="44" height="44" rx="8"/>
+      <rect x="176" y="272" width="44" height="44" rx="8"/>
+      <rect x="288" y="328" width="44" height="44" rx="8"/>
+      <rect x="120" y="328" width="44" height="44" rx="8"/>
+    </g>
+  </g>
+  <text x="254" y="408" font-size="17" fill="#8aa0b8" text-anchor="middle">64명 전문가 · 토큰마다 4명만</text>
+
+  <!-- arrow to laptop -->
+  <path d="M430 250 L560 250" stroke="url(#g1)" stroke-width="3" marker-end="url(#arr)"/>
+  <defs><marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#a78bfa"/></marker></defs>
+
+  <!-- laptop -->
+  <g>
+    <rect x="580" y="170" width="300" height="180" rx="14" fill="#0d1420" stroke="#2a3a55" stroke-width="2"/>
+    <rect x="600" y="188" width="260" height="130" rx="6" fill="#07090f"/>
+    <text x="730" y="222" font-size="18" fill="#39d0ff" text-anchor="middle">184 tok/s · M5 Max</text>
+    <text x="730" y="252" font-size="15" fill="#8aa0b8" text-anchor="middle">질문 → 도구 호출 → 확인</text>
+    <text x="730" y="278" font-size="15" fill="#8aa0b8" text-anchor="middle">한 번 왕복 1초 미만</text>
+    <text x="730" y="302" font-size="14" fill="#ffb45c" text-anchor="middle">클라우드 API 호출 0회</text>
+    <rect x="560" y="350" width="340" height="16" rx="8" fill="#141d2e"/>
+  </g>
+  <text x="730" y="398" font-size="17" fill="#8aa0b8" text-anchor="middle">내 기계에서 계속 켜두는 에이전트</text>
+
+  <!-- right stats -->
+  <g>
+    <rect x="940" y="150" width="150" height="76" rx="12" fill="#0d1420" stroke="#2a3a55"/>
+    <text x="1015" y="184" font-size="26" font-weight="bold" fill="url(#g1)" text-anchor="middle">8개 중 5개</text>
+    <text x="1015" y="210" font-size="14" fill="#8aa0b8" text-anchor="middle">에이전트 벤치 리드·동률</text>
+    <rect x="940" y="242" width="150" height="76" rx="12" fill="#0d1420" stroke="#2a3a55"/>
+    <text x="1015" y="276" font-size="26" font-weight="bold" fill="#ffb45c" text-anchor="middle">51.00</text>
+    <text x="1015" y="302" font-size="14" fill="#8aa0b8" text-anchor="middle">SWE-Bench(상대 66.20)</text>
+    <rect x="940" y="334" width="150" height="60" rx="12" fill="#0d1420" stroke="#2a3a55"/>
+    <text x="1015" y="360" font-size="18" font-weight="bold" fill="#39d0ff" text-anchor="middle">131K</text>
+    <text x="1015" y="382" font-size="13" fill="#8aa0b8" text-anchor="middle">컨텍스트 · 어휘 128K</text>
+  </g>
+  <text x="600" y="466" font-size="15" fill="#5b6f88" text-anchor="middle">10/13 Liquid AI 공개 · 오픈웨이트 · 연매출 1,000만 달러 조항 있는 자체 라이선스</text>
+</svg>
