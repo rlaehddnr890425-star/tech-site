@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07090f"/>
+      <stop offset="1" stop-color="#0b1120"/>
+    </linearGradient>
+    <linearGradient id="funnel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#39d0ff"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffb45c"/>
+      <stop offset="1" stop-color="#ff7ab8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <!-- 깔때기 몸통 -->
+  <path d="M180 80 L1020 80 L1020 110 L680 400 L680 450 L520 450 L520 400 L180 110 Z"
+        fill="none" stroke="url(#funnel)" stroke-width="5" opacity="0.9"/>
+  <path d="M180 80 L1020 80 L1020 110 L680 400 L680 450 L520 450 L520 400 L180 110 Z"
+        fill="url(#funnel)" opacity="0.08"/>
+  <!-- 등급 경계선 -->
+  <g stroke="#1d2a44" stroke-width="2" stroke-dasharray="6 6">
+    <line x1="240" y1="170" x2="960" y2="170"/>
+    <line x1="360" y1="260" x2="840" y2="260"/>
+    <line x1="480" y1="350" x2="720" y2="350"/>
+  </g>
+  <!-- 등급 라벨 (왼쪽) -->
+  <g font-family="AppleSDGothicNeo, sans-serif" fill="#e8eefc">
+    <text x="60" y="120" font-size="30" font-weight="700" fill="url(#amber)">60억</text>
+    <text x="60" y="150" font-size="17" fill="#8fa3c8">거의 안 써봄</text>
+    <text x="60" y="212" font-size="30" font-weight="700" fill="#39d0ff">10~20억</text>
+    <text x="60" y="242" font-size="17" fill="#8fa3c8">무료 잡담봇</text>
+  </g>
+  <!-- 등급 라벨 (오른쪽) -->
+  <g font-family="AppleSDGothicNeo, sans-serif" text-anchor="end">
+    <text x="1140" y="300" font-size="30" font-weight="700" fill="#39d0ff">2,000만</text>
+    <text x="1140" y="330" font-size="17" fill="#8fa3c8">코딩·수학 업무</text>
+    <text x="1140" y="420" font-size="30" font-weight="700" fill="url(#amber)">5,000</text>
+    <text x="1140" y="450" font-size="17" fill="#8fa3c8">내부 모델</text>
+  </g>
+  <!-- 좁은 출구에서 뿜는 스파크 -->
+  <g stroke="url(#amber)" stroke-width="3" stroke-linecap="round">
+    <line x1="600" y1="460" x2="600" y2="492"/>
+    <line x1="560" y1="458" x2="540" y2="488"/>
+    <line x1="640" y1="458" x2="660" y2="488"/>
+  </g>
+  <text x="600" y="52" text-anchor="middle" font-family="AppleSDGothicNeo, sans-serif" font-size="24" font-weight="700" fill="#e8eefc">능력의 문제가 아니라 검증의 문제다</text>
+</svg>
