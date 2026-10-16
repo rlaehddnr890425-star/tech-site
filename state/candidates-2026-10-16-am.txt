@@ -1,0 +1,6 @@
+1. GLM-Legal (Z.ai) — HN 673표·369댓글 (10-12) — https://z.ai/blog/glm-legal [ objetoID 50058507 ]
+2. The gap in shared understanding of LLM capability is widening (Karpathy) — HN 724표·1064댓글 (10-11) — https://twitter.com/karpathy/status/2109361546505966046
+3. Banks are trying to offload the AI data center debt they just underwrote — HN 340표 (startupfortune)
+4. Better HTTP/1 connection reuse in Go 1.27 — HN 217표 — https://go.dev/blog/http-connection-reuse
+5. Sub-1-Bit LLM Compression via Latent Factorization (Samsung Labs) — HN 90표 — https://github.com/SamsungLabs/LittleBit
+6. ts-rust: Port of TypeScript compiler to Rust by LLM — HN 118표·223댓글 — https://github.com/pingdotgg/ts-rust
