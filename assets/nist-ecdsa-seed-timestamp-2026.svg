@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" font-family="sans-serif">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#39d0ff"/><stop offset="0.55" stop-color="#a78bfa"/><stop offset="1" stop-color="#ffb45c"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="500" fill="#07090f"/>
+  <text x="600" y="66" font-size="40" font-weight="bold" fill="url(#g1)" text-anchor="middle" filter="url(#glow)">25년 미스터리의 답은 시계 한 개</text>
+  <text x="600" y="102" font-size="20" fill="#8aa0b8" text-anchor="middle">NIST 곡선 10개의 시드 = srand48(유닉스 타임스탬프) — 1997.05~1998.04</text>
+
+  <!-- wall clock -->
+  <circle cx="200" cy="290" r="105" fill="none" stroke="#2a3550" stroke-width="3"/>
+  <circle cx="200" cy="290" r="97" fill="none" stroke="#1a2233" stroke-width="1.5"/>
+  <g stroke="#5b6b85" stroke-width="2">
+    <line x1="200" y1="193" x2="200" y2="207"/><line x1="200" y1="373" x2="200" y2="387"/>
+    <line x1="103" y1="290" x2="117" y2="290"/><line x1="283" y1="290" x2="297" y2="290"/>
+  </g>
+  <line x1="200" y1="290" x2="200" y2="218" stroke="#ffb45c" stroke-width="5" stroke-linecap="round" filter="url(#glow)"/>
+  <line x1="200" y1="290" x2="258" y2="316" stroke="#39d0ff" stroke-width="4" stroke-linecap="round" filter="url(#glow)"/>
+  <circle cx="200" cy="290" r="6" fill="#e8eef7"/>
+  <text x="200" y="428" font-size="17" fill="#8aa0b8" text-anchor="middle">1997년 어느 날의 유닉스 시각</text>
+
+  <!-- LCG machine -->
+  <rect x="430" y="190" width="300" height="200" rx="18" fill="none" stroke="#2a3550" stroke-width="2.5"/>
+  <text x="580" y="228" font-size="19" fill="#5b6b85" text-anchor="middle">lrand48 상태 48비트</text>
+  <text x="580" y="266" font-size="17" fill="#a78bfa" text-anchor="middle">x = 0x5DEECE66D·x + 0xB</text>
+  <text x="580" y="300" font-size="17" fill="#a78bfa" text-anchor="middle">mod 2⁴⁸ → 상위 31비트만</text>
+  <text x="580" y="344" font-size="15" fill="#5b6b85" text-anchor="middle">20바이트씩 후보 생성 · P-256은 1,842번째</text>
+
+  <!-- arrows -->
+  <g stroke="#39d0ff" stroke-width="2.5" fill="none" stroke-dasharray="9 7">
+    <path d="M310 290 H420"/>
+    <path d="M735 290 H845"/>
+  </g>
+  <path d="M412 284 l10 6 -10 6 z" fill="#39d0ff"/>
+  <path d="M837 284 l10 6 -10 6 z" fill="#39d0ff"/>
+
+  <!-- seed output -->
+  <rect x="855" y="215" width="270" height="150" rx="16" fill="none" stroke="#39d0ff" stroke-width="2" filter="url(#glow)"/>
+  <text x="990" y="252" font-size="18" fill="#39d0ff" text-anchor="middle">NIST 표준의 시드</text>
+  <text x="990" y="288" font-size="15" fill="#e8eef7" text-anchor="middle">C49D3608 86E70493</text>
+  <text x="990" y="312" font-size="15" fill="#e8eef7" text-anchor="middle">6A6678E1 139D26B7</text>
+  <text x="990" y="336" font-size="15" fill="#e8eef7" text-anchor="middle">819F7E90 …</text>
+
+  <text x="600" y="465" font-size="16" fill="#5b6b85" text-anchor="middle">뒷문이 아니라 타임스탬프였습니다 — Claude가 30분 만에 복원, 상금 36,864달러는 기부</text>
+</svg>
