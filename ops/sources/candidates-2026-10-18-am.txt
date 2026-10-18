@@ -1,0 +1,6 @@
+1. DeepSeek-v4.1-Flash-1017 | 691 | https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
+2. Show HN: Llmspeed – local LLM speed before buying hardware | 249 | https://llmspeed.dev/
+3. FLUX 3 Image Klein | 207 | https://bfl.ai/blog/flux-3-image-klein
+4. aicodeking/leanrea | 406 | https://github.com/aicodeking/leanrea
+5. Amazon uses AI to monitor union risk in UK warehouses | 146 | https://www.opendemocracy.net/amazon-ai-surveillance-monitor-union-activity
+6. Why harnesses matter for energy (and token) efficiency | 56 | https://neuralwatt.com/news/why-harnesses-matter-for-energy-efficiency
