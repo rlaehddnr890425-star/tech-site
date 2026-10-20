@@ -5,6 +5,12 @@
 <meta name="description" content="r/LocalLLaMA에 10월 13일 올라온 실측기: 낡은 안드로이드 폰 두 대를 C++ RPC로 묶어 27B 모델을 발열 스로틀링 없이 구동했다. 이 트릭이 성립하는 건 터너리 1.75비트 양자화 덕 — 가중치가 −1/0/+1뿐이라 계산이 아닌 메모리 싸움이 되고, 폰 두 개의 RAM을 한 대분으로 합치는 게 곧 클러스터의 전부다. llama.cpp RPC 백엔드로 따라 하는 절차, 보안 함정, 그리고 '모바일 27B'가 이미 7만원짜리 상용 제품으로 나와 있다는 불편한 사실까지.">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2047918137354374" crossorigin="anonymous"></script>
 <link rel="canonical" href="https://tech.hub77a.com/posts/android-twin-27b-cluster-2026.html">
+<meta property="og:title" content="10/13 — 한 폰에 안 들어가던 27B, 중고 폰 두 대를 붙였더니 발열 없이 돌아갔다 | 테크한잔">
+<meta property="og:description" content="r/LocalLLaMA에 10월 13일 올라온 실측기: 낡은 안드로이드 폰 두 대를 C++ RPC로 묶어 27B 모델을 발열 스로틀링 없이 구동했다. 이 트릭이 성립하는 건 터너리 1.75비트 양자화 덕 — 가중치가 −1/0/+1뿐이라 계산이 아닌 메모리 싸움이 되고, 폰 두 개의 RAM을 한 대분으로 합치는 게 곧 클러스터의 전부다. llama.cpp RPC 백엔드로 따라 하는 절차, 보안 함정, 그리고 &#x27;모바일 27B&#x27;가 이미 7만원짜리 상용 제품으로 나와 있다는 불편한 사실까지.">
+<meta property="og:url" content="https://tech.hub77a.com/posts/android-twin-27b-cluster-2026.html">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "10/13 — 한 폰에 안 들어가던 27B, 중고 폰 두 대를 붙였더니 발열 없이 돌아갔다 | 테크한잔", "url": "https://tech.hub77a.com/posts/android-twin-27b-cluster-2026.html", "description": "r/LocalLLaMA에 10월 13일 올라온 실측기: 낡은 안드로이드 폰 두 대를 C++ RPC로 묶어 27B 모델을 발열 스로틀링 없이 구동했다. 이 트릭이 성립하는 건 터너리 1.75비트 양자화 덕 — 가중치가 −1/0/+1뿐이라 계산이 아닌 메모리 싸움이 되고, 폰 두 개의 RAM을 한 대분으로 합치는 게 곧 클러스터의 전부다. llama.cpp RPC 백엔드로 따라 하는 절차, 보안 함정, 그리고 '모바일 27B'가 이미 7만원짜리 상용 제품으로 나와 있다는 불편한 사실까지.", "datePublished": "2026-10-13", "inLanguage": "ko"}</script>
 <link rel="stylesheet" href="../style.css?v=20261002a"></head>
 <body>
 <header class="hwrap"><div class="wrap hrow">
