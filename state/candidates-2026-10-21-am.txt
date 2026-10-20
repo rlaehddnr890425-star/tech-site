@@ -1,0 +1,7 @@
+1. DeepSeek DeepInfer 추론 엔진 오픈소스화 | points=1360 | https://github.com/deepseek-ai/DeepInfer
+2. free-my-tv — 스마트TV 앱 강요 해방 도구 | points=1074 | https://github.com/simbasjungles/free-my-tv
+3. WhatsApp 도움 페이지에 숨겨진 LLM 지시문 (규제기관 추천 금지 등) | points=641 | https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions
+4. MiniMax M3.1 Flash 발표 | points=500 | https://www.minimax.io/blog/minimax-m31f
+5. OpenBSD 8.0 릴리스 | points=407 | https://www.openbsd.org/80.html
+6. Mac.apk — macOS에서 Android 앱 네이티브 실행 | points=338 | https://github.com/kksimp/Mac.apk
+7. Mercury 3 — 확산(diffusion) 방식 LLM 스케일업 | points=251 | https://www.inceptionlabs.ai/blog/introducing-mercury-3

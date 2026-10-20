@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" font-family="Pretendard, 'Apple SD Gothic Neo', sans-serif">
+  <rect width="1200" height="640" fill="#07090f"/>
+  <text x="600" y="58" text-anchor="middle" fill="#e8ecf4" font-size="30" font-weight="700">DeepInfer 공개 범위 — 엔진은 전부, 서비스는 셋이 모자라</text>
+  <text x="600" y="92" text-anchor="middle" fill="#7f8aa3" font-size="17">10/16 저장소 생성 → 10/20 해커뉴스 1,371표 · Apache-2.0 · 5일 만에 별 9,100</text>
+
+  <rect x="60" y="140" width="500" height="330" rx="16" fill="#0d1420" stroke="#39d0ff" stroke-width="2"/>
+  <text x="310" y="182" text-anchor="middle" fill="#39d0ff" font-size="20" font-weight="700">공개된 것 (엔진)</text>
+  <g fill="#c6cfdf" font-size="17">
+    <text x="95" y="228">· 최적 커널 — FlashMLA · DeepGEMM · DeepEP · TileLang</text>
+    <text x="95" y="268">· 추측 디코딩 — DSpark + 신뢰도 스케줄 검증</text>
+    <text x="95" y="308">· 배치 불변 추론 · 결정적 샘플링 (재현 가능 출력)</text>
+    <text x="95" y="348">· 이산 스케줄링 — CPU 배치 짬을 GPU 계산에 숨김</text>
+    <text x="95" y="388">· 구조화 출력 — 정규식 · JSON 스키마 · EBNF</text>
+    <text x="95" y="428">· 하드웨어: NVIDIA SM100 · 화웨이 어센드 950</text>
+  </g>
+
+  <rect x="640" y="140" width="500" height="330" rx="16" fill="#160f14" stroke="#ff7ab8" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="890" y="182" text-anchor="middle" fill="#ff7ab8" font-size="20" font-weight="700">빠진 것 (서비스 3점)</text>
+  <g fill="#d8c9d3" font-size="17">
+    <text x="675" y="238">① KV 캐시 시스템 — 값싼 캐시 읽기의 저장소 계층</text>
+    <text x="675" y="288">② Prefill/Decode 분리 배포 — 엔진 기능은 대부분</text>
+    <text x="700" y="316">구현됐지만 배포 형태는 미포함</text>
+    <text x="675" y="368">③ 데이터 병렬 리플리카 간 로드 밸런싱</text>
+    <text x="675" y="428">→ 직접 꾸리려면: Linux · GCC 13 · Python 3.12</text>
+    <text x="700" y="456">· CUDA 13 (어센드는 CANN 9.2)</text>
+  </g>
+
+  <rect x="60" y="510" width="1080" height="84" rx="14" fill="#101a12" stroke="#ffb45c" stroke-width="2"/>
+  <text x="600" y="546" text-anchor="middle" fill="#ffb45c" font-size="19" font-weight="700">저쪽 주장: 단일 클러스터 하루 155조 토큰 · 카드당 시간 38달러(비성수가) — 근거는 중문 기고 재인용</text>
+  <text x="600" y="576" text-anchor="middle" fill="#93a0b8" font-size="16">비교로 돌린 H100 임대 시세 시간 2.75달러(FT 보도) — 단 어느 카드 기준인지 미명시</text>
+</svg>
