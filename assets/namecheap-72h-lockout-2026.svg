@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" font-family="sans-serif">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#39d0ff"/><stop offset="0.55" stop-color="#a78bfa"/><stop offset="1" stop-color="#ffb45c"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <marker id="arw" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#ffb45c"/></marker>
+  </defs>
+  <rect width="1200" height="500" fill="#07090f"/>
+  <text x="600" y="62" font-size="38" font-weight="bold" fill="url(#g1)" text-anchor="middle" filter="url(#glow)">한 통의 메일 → 72시간 → 계정 통째 정지</text>
+  <text x="600" y="98" font-size="20" fill="#8aa0b8" text-anchor="middle">Namecheap 도메인 압류 사건 — HN 표 419·댓글 199 (2026-10-18 게시)</text>
+
+  <!-- flow boxes -->
+  <rect x="60" y="150" width="250" height="140" rx="14" fill="none" stroke="#39d0ff" stroke-width="2"/>
+  <text x="185" y="185" font-size="21" fill="#39d0ff" text-anchor="middle">① 검증 요청 메일 1통</text>
+  <text x="185" y="216" font-size="16" fill="#c8d6e5" text-anchor="middle">연락처 = 아무도 안 읽는</text>
+  <text x="185" y="240" font-size="16" fill="#c8d6e5" text-anchor="middle">공용 우편함 (admin@)</text>
+  <text x="185" y="270" font-size="15" fill="#8aa0b8" text-anchor="middle">시한 72시간</text>
+
+  <rect x="360" y="150" width="250" height="140" rx="14" fill="none" stroke="#a78bfa" stroke-width="2"/>
+  <text x="485" y="185" font-size="21" fill="#a78bfa" text-anchor="middle">② 계정 잠금 + 전 정지</text>
+  <text x="485" y="216" font-size="16" fill="#c8d6e5" text-anchor="middle">계정 안 도메인 전부 seize</text>
+  <text x="485" y="240" font-size="16" fill="#c8d6e5" text-anchor="middle">로그인·이관코드 발급까지 차단</text>
+  <text x="485" y="270" font-size="15" fill="#8aa0b8" text-anchor="middle">대시보드에 이의 제기 버튼 없음</text>
+
+  <rect x="660" y="150" width="250" height="140" rx="14" fill="none" stroke="#ffb45c" stroke-width="2"/>
+  <text x="785" y="185" font-size="21" fill="#ffb45c" text-anchor="middle">③ 신원 서류 제출</text>
+  <text x="785" y="216" font-size="16" fill="#c8d6e5" text-anchor="middle">전화 번호 + 정부 발급 신분증</text>
+  <text x="785" y="240" font-size="16" fill="#c8d6e5" text-anchor="middle">제출 후 복구까지 30시간</text>
+  <text x="785" y="270" font-size="15" fill="#8aa0b8" text-anchor="middle">복구 직후 첫 작업 = 이관 (20분)</text>
+
+  <rect x="960" y="150" width="190" height="140" rx="14" fill="none" stroke="#ff7ab8" stroke-width="2"/>
+  <text x="1055" y="185" font-size="21" fill="#ff7ab8" text-anchor="middle">④ 탈출</text>
+  <text x="1055" y="216" font-size="16" fill="#c8d6e5" text-anchor="middle">전 도메인</text>
+  <text x="1055" y="240" font-size="16" fill="#c8d6e5" text-anchor="middle">타 등록기관</text>
+  <text x="1055" y="270" font-size="15" fill="#8aa0b8" text-anchor="middle">이전 사례: Cloudflare·Porkbun</text>
+
+  <line x1="310" y1="220" x2="360" y2="220" stroke="#ffb45c" stroke-width="3" marker-end="url(#arw)"/>
+  <line x1="610" y1="220" x2="660" y2="220" stroke="#ffb45c" stroke-width="3" marker-end="url(#arw)"/>
+  <line x1="910" y1="220" x2="960" y2="220" stroke="#ffb45c" stroke-width="3" marker-end="url(#arw)"/>
+
+  <!-- bottom facts -->
+  <g font-size="18" fill="#c8d6e5">
+    <rect x="80" y="360" width="320" height="76" rx="12" fill="#0d1420" stroke="#1f2c3f"/>
+    <text x="240" y="390" text-anchor="middle" fill="#39d0ff">2025년 CVC 인수 — 15억 달러</text>
+    <text x="240" y="416" text-anchor="middle" fill="#8aa0b8" font-size="15">지원 인력 축소·.com 올해 3회 인상 (HN 증언)</text>
+    <rect x="440" y="360" width="320" height="76" rx="12" fill="#0d1420" stroke="#1f2c3f"/>
+    <text x="600" y="390" text-anchor="middle" fill="#a78bfa">.com 등록기관 원가 약 11달러</text>
+    <text x="600" y="416" text-anchor="middle" fill="#8aa0b8" font-size="15">시중가 15~25달러 — 연 10달러 절전의 대가는 30시간</text>
+    <rect x="800" y="360" width="320" height="76" rx="12" fill="#0d1420" stroke="#1f2c3f"/>
+    <text x="960" y="390" text-anchor="middle" fill="#ffb45c">도메인엔 백업이 없다</text>
+    <text x="960" y="416" text-anchor="middle" fill="#8aa0b8" font-size="15">회수 경로는 등록기관 분쟁 절차뿐 — 며칠~몇 주</text>
+  </g>
+</svg>
