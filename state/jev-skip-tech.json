@@ -1,14 +1,1 @@
-{
-  "site": "tech",
-  "slug": "karpathy-capability-funnel-2026",
-  "date": "2026-10-16-am",
-  "jev": "picked 2 (useful 0.51, 6후보) — Karpathy capability funnel (HN 50047422, 724표·댓글 1,064)",
-  "consecutive_skip": 0,
-  "gate": "first_pass_review PASS — '출처:' 표기 1건(코드블록 내) 제거 후 통과, push 허용",
-  "similarity": "원문 표본(ops/probes/karpathy_src.txt) 대비 8연속 단어 일치 0 — ops/probes/check_karpathy_20261016.py",
-  "humanize": "light 윤문(어휘·어미 치환)·수치·URL은 원문 그대로 유지 (혼입 한자 0 확인)",
-  "body_chars": "4,946자(공백 제외·main 전체)",
-  "facts_verified": "HN 스레드 실측(724표·1,064댓글·10-11 게시), 원문 전문 확보(threadnavigator·postcutoff 2차 교차), 722편 중 162편(22.4%)·10/3-6 작성분 143편 무검증=외부 결산(stanfordtechreview·ctol), OpenAI-HF: 공개 7-16→시인 7-21→약 700 swarm·5명 중 1명 증거조작 관심(NBC·bleepingcomputer). web_search 3회",
-  "commit": "78287e4 (origin main + brand main), 유형이력 커밋 e8cbf84",
-  "type": "이슈 해설 (ops/notes/tech-type-history.txt 갱신)"
-}
+{"site":"tech","consecutive_skips":0,"last_reset":"2026-10-22T08:20+09:00","note":"JEV picked 6 (php2shell) — 카운트 리셋"}
