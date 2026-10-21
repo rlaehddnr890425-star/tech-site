@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="'Apple SD Gothic Neo','Malgun Gothic',sans-serif">
+<rect width="1200" height="630" fill="#07090f"/>
+<text x="600" y="66" text-anchor="middle" fill="#e8ecf5" font-size="40" font-weight="700">중간 인증서 8장 — 개인키가 증서 안에서 보이던 상태</text>
+<text x="600" y="112" text-anchor="middle" fill="#8b93a7" font-size="24">eMudhra 유출 사건 · 2026-10-20 공개 · 해커뉴스 622표</text>
+<rect x="60" y="170" width="510" height="270" rx="18" fill="#0d1420" stroke="#39d0ff" stroke-width="2"/>
+<text x="315" y="218" text-anchor="middle" fill="#39d0ff" font-size="27" font-weight="700">브라우저권 — 비껴갔다</text>
+<text x="315" y="268" text-anchor="middle" fill="#cfd6e4" font-size="21">투명성 로그 강제:</text>
+<text x="315" y="300" text-anchor="middle" fill="#cfd6e4" font-size="21">로그에 없는 증서는 거부</text>
+<text x="315" y="348" text-anchor="middle" fill="#7fe0b0" font-size="22" font-weight="700">공격될 수조차 없었다</text>
+<text x="315" y="396" text-anchor="middle" fill="#8b93a7" font-size="19">파이어폭스 · 크롬 · 엣지 · 사파리</text>
+<rect x="630" y="170" width="510" height="270" rx="18" fill="#160f14" stroke="#ff7ab8" stroke-width="2"/>
+<text x="885" y="218" text-anchor="middle" fill="#ff7ab8" font-size="27" font-weight="700">비(非)브라우저권 — 노출</text>
+<text x="885" y="268" text-anchor="middle" fill="#cfd6e4" font-size="21">갱소·투명성 정보를 소비하지 않음</text>
+<text x="885" y="300" text-anchor="middle" fill="#cfd6e4" font-size="21">업데이트를 받아야만 안전</text>
+<text x="885" y="348" text-anchor="middle" fill="#ffb45c" font-size="22" font-weight="700">실제 악용 여부는 미확인</text>
+<text x="885" y="396" text-anchor="middle" fill="#8b93a7" font-size="19">사물인터넷 · 앱 · curl · 언어 런타임</text>
+<rect x="60" y="490" width="1080" height="90" rx="14" fill="#0d1420" stroke="#2a3245" stroke-width="1.5"/>
+<text x="110" y="542" fill="#a78bfa" font-size="21" font-weight="700">차단 시계</text>
+<text x="300" y="542" fill="#cfd6e4" font-size="20">10/17 신고·파이어폭스+크롬 → 10/19 애플+신뢰저장소 통지 → 10/20 마이크로소프트·사건 공개</text>
+<text x="1120" y="600" text-anchor="end" fill="#525d75" font-size="17">테크한잔</text>
+</svg>
