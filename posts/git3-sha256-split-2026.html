@@ -11,7 +11,9 @@
 <meta property="og:type" content="article">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "10월 1일 개시, 해시 40자→64자 — Git 3.0 기본값 전환이 '역대급 파괴'라 불리는 이유 | 테크한잔", "url": "https://tech.hub77a.com/posts/git3-sha256-split-2026.html", "description": "Git 3.0은 새 저장소의 기본 해시를 SHA-1에서 SHA-256으로 바꾼다. 저장소 제작사 GitButler 창립자가 반발 글을 올려 해커뉴스 표 329·댓글 319를 모았다. SHA-1 충돌 공격의 실체, 두 포맷이 섞이지 않는 구조, 서명 체인을 살리는 '트리 해시 헤더' 대안, 반대 논리까지.", "datePublished": "2026-10-02", "inLanguage": "ko"}</script>
-<link rel="stylesheet" href="../style.css?v=20261002a"></head>
+<link rel="stylesheet" href="../style.css?v=20261002a">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "무엇이 터졌나", "acceptedAnswer": {"@type": "Answer", "text": "Git은 '내용이 주소'인 데이터베이스다. 파일이든 커밋이든 내용을 hash로 식별하고, 같은 내용은 두 번 저장되지 않는다. 상위 커밋이 하위 커밋의 해시를 물려받기 때문에 하나만 고쳐도 이후 역사의 주소가 전부 바뀐다. 2005년부터 이 주소 생성기에 SHA-1이 쓰여 왔고, 20년 동안 표기는 40자 16진수였다."}}]}</script>
+</head>
 <body>
 <header class="hwrap"><div class="wrap hrow">
 <a class="logo" href="../index.html"><span class="cup">🥃</span><b>테크한잔</b></a>

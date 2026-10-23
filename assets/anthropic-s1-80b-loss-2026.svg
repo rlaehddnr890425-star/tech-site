@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" role="img" aria-label="Anthropic S-1 숫자 — 손실 807억 중 720억은 회계 조정, 매출 163억, 클라우드 확정 매입 4,500억을 다크 네온 막대그래프로 그린 일러스트">
+<rect width="1200" height="420" fill="#07090f"/>
+<text x="60" y="64" fill="#39d0ff" font-family="Pretendard, sans-serif" font-size="34" font-weight="700">S-1 원서가 까발린 세 줄</text>
+<text x="60" y="100" fill="#8b93a7" font-family="Pretendard, sans-serif" font-size="19">2026 상반기 · 단위 10억 달러(비현금 손실 구간 표시)</text>
+<g font-family="Pretendard, sans-serif" font-size="19">
+<text x="60" y="160" fill="#e8ecf5">순손실</text>
+<rect x="260" y="140" width="866" height="30" rx="6" fill="#ffb45c" opacity="0.28"/>
+<rect x="260" y="140" width="771" height="30" rx="6" fill="#ffb45c" opacity="0.55"/>
+<text x="300" y="161" fill="#07090f" font-weight="700">비현금 $72.0B (89%)</text>
+<text x="1040" y="161" fill="#ffb45c" font-weight="700">$80.7B</text>
+<text x="60" y="230" fill="#e8ecf5">매출</text>
+<rect x="260" y="210" width="175" height="30" rx="6" fill="#39d0ff"/>
+<text x="450" y="231" fill="#39d0ff" font-weight="700">$16.3B · 1년 전 $1.1B의 약 15배</text>
+<text x="60" y="300" fill="#e8ecf5">클라우드 확정 매입(10년)</text>
+<rect x="260" y="280" width="640" height="30" rx="6" fill="#a78bfa"/>
+<text x="915" y="301" fill="#a78bfa" font-weight="700">약 $450B · Google $111B / AWS $110B / Microsoft $31B</text>
+</g>
+<text x="60" y="378" fill="#8b93a7" font-family="Pretendard, sans-serif" font-size="16">고객 두 곳이 상반기 매출의 약 20% · 인프라 지출은 2025년 연간치($7.3B)를 6개월에 초과 (약 $9B) · 테크한잔</text>
+</svg>

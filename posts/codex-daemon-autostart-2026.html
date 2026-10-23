@@ -11,7 +11,9 @@
 <meta property="og:type" content="article">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "10/12 해커뉴스 449표 — Codex CLI가 몰래 심는 374MB 자가갱신 데몬, 잡는 법 3줄 | 테크한잔", "url": "https://tech.hub77a.com/posts/codex-daemon-autostart-2026.html", "description": "OpenAI Codex CLI가 0.157.0부터 대화형 창을 열기만 해도 백그라운드 데몬을 기본 자동 설치한다. 창을 다 닫아도 PID 1로 살아남고, 374MB 패키지를 ~/.codex에 복제하고, 매 시각마다 스스로 갱신해 작업 중이던 턴을 죽이기까지 한다. 이슈 #48195가 해커뉴스 449표로 번진 이유와 3줄 종료·차단 시술을 정리한다.", "datePublished": "2026-10-13", "inLanguage": "ko"}</script>
-<link rel="stylesheet" href="../style.css?v=20261002a"></head>
+<link rel="stylesheet" href="../style.css?v=20261002a">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "무엇이 터졌나", "acceptedAnswer": {"@type": "Answer", "text": "이슈 본문이 그려 주는 0.157.0 이후의 'codex 한 번 띄우기'는 네 단계다. 첫째, 대화형 세션이 열리면서 codex app-server --managed-daemon이 백그라운드에 박힌다. 둘째, 방금 npm으로 설치한 것과 바이트까지 같은 374MB 패키지 사본이 ~/.codex/packages/app-server-daemon/releases/에 만들어지고, 데몬은 그 사본에서 돈다. 이 순간부터 백엔드 버전은 brew·pacman·npm이 관리하는 버전과 남남이 된다. 셋째, 분리된 업데이터가 깬다 — 5분 뒤 1차로 점검하고, 이후 한 시간마다 새 판을 기웃거리다 나오면 데몬을 재시작한다. 넷째, 데몬은 처음 띄운 세션의 환경을 얼려 쓴다. 프록시를 넣은 래퍼로 한 번 띄우면 이후 어떤 세"}}, {"@type": "Question", "name": "왜 대단한가", "acceptedAnswer": {"@type": "Answer", "text": "① CLI와 앱의 경계에서 PC 주권이 시험대에 올랐다HN 스레드를 지배한 문장은 이 정도다: 패키지 매니저는 이미 수천 개 프로그램을 백그라운드 자동갱신까지 시키며 굴러가게 만든다 — 그런데 애플리케이션이 각자의 방식으로도 자기 자신을 설치하기 시작하면? 상주 서버의 실익은 분명하다. 여러 창이 하나 백엔드를 공유하면 기동 지연이 줄고 세션 상태도 이어진다. 다만 그 실익이 '창 하나 연 사용자'에게까지 전가될 때 대가는 디스크 374MB, 살아 있는 프로세스, 버전 드리프트의 셋이다. Nix 커뮤니티가 Codex 패키지에서 두 동작(자동 설치·자가갱신)을 패치로 도려내 쓴다는 링크가 붙었고, 'Claude Code도 ~/.local/share/claude/versions에 과거 바이너리를 쌓은 채 백그라"}}]}</script>
+</head>
 <body>
 <header class="hwrap"><div class="wrap hrow">
 <a class="logo" href="../index.html"><span class="cup">🥃</span><b>테크한잔</b></a>

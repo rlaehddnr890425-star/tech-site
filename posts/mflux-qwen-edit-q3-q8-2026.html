@@ -11,7 +11,9 @@
 <meta property="og:type" content="article">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "10/10 올라온 이미지 편집 6종, 96GB 맥에서 Q8과 Q3를 붙여봤다 — 3분 43초와 40초, 화면에서 갈렸다 | 테크한잔", "url": "https://tech.hub77a.com/posts/mflux-qwen-edit-q3-q8-2026.html", "description": "10월 10일(한국 시각) 하퍼싱페이스에 Qwen-Image-Edit-2511의 MFlux 양자화 6종(BF16 56.6GB·Q8 37.5·Q6 32.4·Q5 29.8·Q4 29.0·Q3 24.7GB)이 한꺼번에 올라왔다. 37.5GB본과 24.7GB본을 같은 맥(M3 Ultra·96GB·mflux 0.22.0)에 같은 시드 42로 붙인 실측: Q8은 피크 38.19GB·스텝당 3분 43초로 지시를 지켰고, Q3은 피크 25.61GB·스텝당 40초로 빨랐지만 지시를 무시한 채 알갱이 화면을 뱉었다(두 결과 화소 평균차 52.7). '가장 많이 깎은 양자화가 가장 먼저 무너지는 지점'을 우리 손으로 확인한 절차와, 용량·시간·결과를 함께 읽는 표를 남긴다.", "datePublished": "2026-10-10", "inLanguage": "ko"}</script>
-<link rel="stylesheet" href="../style.css?v=20261002a"></head>
+<link rel="stylesheet" href="../style.css?v=20261002a">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "무엇이 올라왔나", "acceptedAnswer": {"@type": "Answer", "text": "먼저 물건 정리. Qwen-Image-Edit-2511은 알리바바의 이미지 편집 모델이고, MFlux는 이 계열 생성 모델을 애플 실리콘에서 MLX로 돌리게 해 주는 오픈소스 실행기다(mflux-community 저장소 카드에 적힌 정의 그대로다). 이번에 올라온 6종은 원본 가중치를 MLX 문법으로 옮기고 비트를 깎은 커뮤니티 변환본으로, 저장소마다 '원작자의 공식 릴리스가 아니다'라는 못 박기가 붙어 있다. 변환은 mflux 0.22.0, 10월 10일 자."}}, {"@type": "Question", "name": "왜 의미 있나", "acceptedAnswer": {"@type": "Answer", "text": "① 언어모델에서는 '꽤 깎아도 꽤 쓴다'가 통한다. 4비트짜리 LLM을 굴려 본 사람은 Q3이라 하면 '좀 흐릿한 정도'를 기대한다. 그런데 생성·편집 모델에서 양자화가 공격적으로 무너지는 건 커뮤니티에서 반복해 보고돼 온 지점이다. 우리가 붙여 본 결과가 그 경계의 실물이었다. Q3은 화면을 '덜 선명하게' 낸 게 아니다. 입력을 무시하고 자기만의 노이즈를 냈다. 화소 평균차 52.7, 화소 99.9%에서 원본과 다른 값 — 흐려짐이 아니라 다른 그림이다. 지시를 따라 그림을 '바꾸는' 모델에서 지시 추적이 먼저 죽으면 속도는 무의미해진다."}}]}</script>
+</head>
 <body>
 <header class="hwrap"><div class="wrap hrow">
 <a class="logo" href="../index.html"><span class="cup">🥃</span><b>테크한잔</b></a>
