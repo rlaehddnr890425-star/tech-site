@@ -12,7 +12,9 @@
 <meta property="og:type" content="article">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "4월부터 '증서만 보면 열쇠가 보이는' 상태였던 인증기관 8곳 — 브라우저는 안전했고 사물인터넷은 노출됐다 | 테크한잔", "url": "https://tech.hub77a.com/posts/emudhra-ca-keyleak-2026.html", "description": "eMudhra 중간 인증서 8개 개인키가 키 생성 결함으로 누구나 복원 가능한 상태였다. 10/17~10/20 차단 타임라인과 런타임별 패치 버전, 자가 진단법을 정리한다.", "datePublished": "2026-10-21", "inLanguage": "ko"}</script>
-<link rel="stylesheet" href="../style.css?v=20261002a"></head>
+<link rel="stylesheet" href="../style.css?v=20261002a">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "무엇이 터졌나", "acceptedAnswer": {"@type": "Answer", "text": "사건 페이지의 문장부터 옮겨 읽는다. \"eMudhra 중간 인증서 8장의 개인키가 유출됐다. 이들은 모질라·마이크로소프트·애플·크롬 루트 프로그램과 다수 하위 신뢰저장소가 신뢰하는 최상위 인증서로 이어진다.\" 여기서 '유출(compromised)'이 통상 의미하는 해킹 침투가 아니라는 점이 이 사건의 본질이다. 원인은 '중간 인증서 개인키들이 CA에 의해 잘못 생성됐다' — 공개 증서 하나로 되집을 수 있는 키를, 기관이 스스로 만든 것이다."}}, {"@type": "Question", "name": "왜 대단한가", "acceptedAnswer": {"@type": "Answer", "text": "① '이미 뚫렸다'가 아니라 '예전부터 열려 있었다'라는 결함 형태"}}]}</script>
+</head>
 <body>
 <header class="hwrap"><div class="wrap hrow">
 <a class="logo" href="../index.html"><span class="cup">🥃</span><b>테크한잔</b></a>
