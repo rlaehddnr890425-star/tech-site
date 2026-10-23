@@ -11,7 +11,9 @@
 <meta property="og:type" content="article">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "10/13 — 한 폰에 안 들어가던 27B, 중고 폰 두 대를 붙였더니 발열 없이 돌아갔다 | 테크한잔", "url": "https://tech.hub77a.com/posts/android-twin-27b-cluster-2026.html", "description": "r/LocalLLaMA에 10월 13일 올라온 실측기: 낡은 안드로이드 폰 두 대를 C++ RPC로 묶어 27B 모델을 발열 스로틀링 없이 구동했다. 이 트릭이 성립하는 건 터너리 1.75비트 양자화 덕 — 가중치가 −1/0/+1뿐이라 계산이 아닌 메모리 싸움이 되고, 폰 두 개의 RAM을 한 대분으로 합치는 게 곧 클러스터의 전부다. llama.cpp RPC 백엔드로 따라 하는 절차, 보안 함정, 그리고 '모바일 27B'가 이미 7만원짜리 상용 제품으로 나와 있다는 불편한 사실까지.", "datePublished": "2026-10-13", "inLanguage": "ko"}</script>
-<link rel="stylesheet" href="../style.css?v=20261002a"></head>
+<link rel="stylesheet" href="../style.css?v=20261002a">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "무엇이 터졌나", "acceptedAnswer": {"@type": "Answer", "text": "제기문을 쪼개면 주장 셋. 첫째, 낡은 폰 두 대를 묶었더니 27B가 돌아갔다. 둘째, 그 데워짐 — 과열 스로틀링은 없었다. 셋째, 그걸 가능하게 한 배후는 두 기술이다: C++ RPC 분할, Hadamard 터너리 연산. 제기는 10월 13일 새벽 4시쯤(한국 시각) 이 한 문단과 제목을 던지고, 하드웨어 기종도 토큰당 속도도 붙이지 않았다. r/LocalLLaMA 초기 반응도 '얼마나 빠른가'보다 '어떻게 쪼갰나'에 몰렸다. 제목 자체부터가 방법론 자랑이다."}}, {"@type": "Question", "name": "왜 대단한가", "acceptedAnswer": {"@type": "Answer", "text": "① 발열이 아니라 용량이 문제라는 걸, 두 대가 증명한다폰에서 LLM을 돌리면 열부터 걱정한다. SoC 전체가 하나의 히트싱크 달린 칩이라 5초만 풀로드면 스로틀이 온다. 그런데 터너리 세계는 결이 다르다. 가중치가 −1/0/+1이라 곱셈이 사실상 소거되고, 매번 도는 건 \"6GB짜리 테이블을 얼마나 빨리 읽느냐\"뿐이다. 읽기는 계산보다 발열이 덜하다 — DRAM을 갉아먹는 건 맞되 ALU 불꽃은 아니다. 여기에 층 분할이 겹치면 각 폰은 27B의 절반만 계산한다. 제기가 '과열 없음'을 성과로 내건 건 이 물리학 위의 관찰일 가능성이 높다. 기종을 안 밝혀 단정은 못 하지만, 속도 대신 열을 앞세운 선택 자체는 이 모델의 병목 위치를 정확히 찌른다."}}]}</script>
+</head>
 <body>
 <header class="hwrap"><div class="wrap hrow">
 <a class="logo" href="../index.html"><span class="cup">🥃</span><b>테크한잔</b></a>

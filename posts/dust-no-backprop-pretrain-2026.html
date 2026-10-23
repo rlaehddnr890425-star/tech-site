@@ -11,7 +11,9 @@
 <meta property="og:type" content="article">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "10/5 공개, 역전파 없이 사전학습 — 표 156·댓글 37로 붙은 '먼지'의 진짜 논쟁은 계산량 1,000배 | 테크한잔", "url": "https://tech.hub77a.com/posts/dust-no-backprop-pretrain-2026.html", "description": "Q Labs가 10월 5일 공개한 'Dust(먼지)'는 가중치가 아니라 활성화에 가우시안 잡음을 섞고, 토큰마다 다른 시행을 한 번의 정방향 통과로 동시에 평가해 그래디언트를 추정한다. 10M 토큰에서 파라미터 120배 큰 모델이 인구 64 시행부터 이기고, EGGROLL보다 1,000~10,000배 효율적이며, 1B 토큰 지점까지 역전파와의 코사인 정렬이 유지된다. 해커뉴스 37개 댓글이 '1,000배 비싼 데 왜 쓰나'에 모인 이유와 역전파 우위 논쟁을 정리한다.", "datePublished": "2026-10-06", "inLanguage": "ko"}</script>
-<link rel="stylesheet" href="../style.css?v=20261002a"></head>
+<link rel="stylesheet" href="../style.css?v=20261002a">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "무엇이 터졌나", "acceptedAnswer": {"@type": "Answer", "text": "설정의 격부터 적어둔다. 이 실험은 대형 모델이 아니다. GPT 계열 트랜스포머, 4,096 토큰 BPE 토크나이저, 배치 16k 토큰(2,048 토큰 8개), 에포크 1, 관성 붙은 SGD에 상수 학습률. 기본 모델은 8층에 가로폭 512. 학습 데이터는 FineWeb. 모든 방법은 같은 규정으로 3시드, 예산·인구마다 각각 튜닝했고, 보고 값은 검증 집 최우 체크포인트의 테스트 손실이다."}}]}</script>
+</head>
 <body>
 <header class="hwrap"><div class="wrap hrow">
 <a class="logo" href="../index.html"><span class="cup">🥃</span><b>테크한잔</b></a>

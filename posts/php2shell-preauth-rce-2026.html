@@ -12,7 +12,9 @@
 <meta property="og:type" content="article">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "빈 파일 업로드 한 번으로 워드프레스를 따는 14년 묵은 기억장치 결함 — 웹 78% PHP 긴급 패치 해부(1편째) | 테크한잔", "url": "https://tech.hub77a.com/posts/php2shell-preauth-rce-2026.html", "description": "PHP 핵심 기억장치 관리의 OOM 결함 두 건이 긴급 릴리스로 패치됐다. 기본 설정 무인증 원격코드실행, 14년 이력, AI 발견 3팀, 봉쇄 공개 붕괴 경위와 운영자 대응법을 정리한다.", "datePublished": "2026-10-22", "inLanguage": "ko"}</script>
-<link rel="stylesheet" href="../style.css?v=20261002a"></head>
+<link rel="stylesheet" href="../style.css?v=20261002a">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "무엇이 터졌나", "acceptedAnswer": {"@type": "Answer", "text": "10월 21일(현지) 새벽, PHP 프로젝트가 평상 릴리스 사이클을 무시한 채 4개 버전 짜리를 한꺼번에 던졌다. 8.2.35·8.3.36·8.4.27·8.5.12 — 이름만 보면 상례의 유지 보수인데, 안에 들어간 건 엔진 한복판을 도려낸 300개짜리 수정이다."}}, {"@type": "Question", "name": "왜 대단한가", "acceptedAnswer": {"@type": "Answer", "text": "① '메모리 다 썼다'는 보고가 왜 무기인가. 캘리포니아 팀이 공개한 사료를 따라가 보면 결함의 출발은 흔하디흔한 초과 보고다. 업로드 요청 하나를 붙이는 것만으로 히프를 말려 죽이는 재료가, 하필 빈 파일이다. 파일명이 빈칸인 업로드 항목은 실제 용량이 0인데도 PHP는 내부 항목 여섯 개(이름·경로·종류·임시경로·오류·크기)를 전부 만들어 주고, 개수 제한에도 안 잡힌다. 여기에 files[a][b][c]처럼 이름을 중첩시키면 여섯 항목 각각에 사다리까지 별도 할당이 늘어난다. HTTP 원문은 기본 제한(8 MiB) 아래로 묶어 두고, 서버 안에서만 128 MiB 히프를 터뜨리는 배합이 성립한다."}}]}</script>
+</head>
 <body>
 <header class="hwrap"><div class="wrap hrow">
 <a class="logo" href="../index.html"><span class="cup">🥃</span><b>테크한잔</b></a>

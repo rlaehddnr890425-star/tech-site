@@ -11,7 +11,9 @@
 <meta property="og:type" content="article">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "10/2 공개된 음성인식 16.9MB — 7개 언어·첫 글자 11ms, GPU 없이 도는 이 작은 모델이 지갑에 넣은 세 가지 | 테크한잔", "url": "https://tech.hub77a.com/posts/whistle-16mb-cpu-asr-2026.html", "description": "10월 2일 공개된 Whistle은 음성인식 모델 전체를 16.9MB짜리 파일 하나(실측 16,919,407바이트)에 담은 오픈 모델이다. 영어·독일어·프랑스어·스페인어·이탈리아어·네덜란드어·폴란드어 7개 언어를 한 번에 30초까지 받아쓰고, 첫 글자까지 11ms. GPU도 클라우드도 필요 없다. 해커뉴스 515표 댓글창에서 가장 많이 갈린 건 '작다'가 아니라 '그래서 얼마나 잘 듣나'였다. 파라미터 7,260만 개인 whisper base와 붙는 경쟁, 170개 문장 실험에서 70개를 맞히다 템플릿 방식으로 164개를 맞힌 실제 배포 후기, 한국어가 없는 목록까지 정리한다.", "datePublished": "2026-10-09", "inLanguage": "ko"}</script>
-<link rel="stylesheet" href="../style.css?v=20261002a"></head>
+<link rel="stylesheet" href="../style.css?v=20261002a">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "무엇이 터졌나", "acceptedAnswer": {"@type": "Answer", "text": "모델을 열어보면 파일이 둘 나란히 들어 있다. 학습 가중치를 담은 체크포인트가 220,618,620바이트(약 210MB), 실제 배포용 파일 whistle.cact가 16,919,407바이트. 같은 모델인데 부피가 13배 벌어진다. 차이를 만든 건 양자화 한 가지가 아니다. 같은 팀의 언어모델 Needle이 이미 쓰던 파일 통·양자화·SIMD 커널을 음성 모델이 그대로 빌려 썼다. 그래서 언어모델이 도는 실행 파일에 음성 모델을 옆으로 얹어도 된다. 실행 파일 두 개, 런타임 두 개가 아니라 하나에 두 모델이다."}}, {"@type": "Question", "name": "왜 대단한 논점인가", "acceptedAnswer": {"@type": "Answer", "text": "① 경쟁 상대가 '가장 큰 모델'이 아니라 '가장 흔한 작은 모델'로 정해졌다 비교표에서 이 모델이 앞선다고 밝힌 상대는 초거대 모델이 아니다. 파라미터 7,260만 개짜리 whisper base(fp32)와 영어 전용 소형 모델이다. 이 팀은 16.9MB로 70MB짜리를 일부 구간에서 넘었다고 주장하고, 넘기지 못한 구간(프랑스어권 음성, 회의 음성 등)도 표에 함께 박아 뒀다. 상대 수치는 원저자가 공개한 값을 그대로 옮겨 비교 기준을 공개한 셈이다. 눈여겨볼 건 이 비교의 의미가 '기적'이 아니라 '임계선'이라는 점이다. 한때 70MB는 스마트폰에 넣기 애매한 크기였다. 17MB는 앱 설치 파일 안에 소리 없이 들어가는 크기다. 성능 격차가 좁혀진 게 아니다. '작다는 이유로 검토 대상에서 자동 제외되"}}]}</script>
+</head>
 <body>
 <header class="hwrap"><div class="wrap hrow">
 <a class="logo" href="../index.html"><span class="cup">🥃</span><b>테크한잔</b></a>

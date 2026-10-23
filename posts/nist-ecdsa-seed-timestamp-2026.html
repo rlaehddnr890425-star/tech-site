@@ -11,6 +11,8 @@
 <meta property="og:description" content="25년된 NIST 타원곡선 시드 미스터리의 답은 srand48(타임스탬프). Claude가 30분 만에 복원한 과정과 남은 의문.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://tech.hub77a.com/posts/nist-ecdsa-seed-timestamp-2026.html">
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "무엇이 터졌나", "acceptedAnswer": {"@type": "Answer", "text": "ECDSA는 인터넷에서 서명 하나로 신원을 증명하는 일의 대부분을 담당하는 알고리즘이다. 브라우저의 자물쇠, 패키지 서명, 결제 승인 뒤에서 돈다. 2000년 NIST가 FIPS 186-2라는 서명 표준에 곡선 세트를 실으면서, 곡선마다 '시드'라는 160비트 값도 함께실었다했다. 이 값은 곡선 방정식의 계수 하나(b)를 결정하는 재료다. P-256의 경우 이렇게 생겼다."}}, {"@type": "Question", "name": "왜 대단한 논점인가", "acceptedAnswer": {"@type": "Answer", "text": "① 열쇠를 쥔 건 질문 하나가 아니라 '단서를 버린 판단'이었다 10월, Anthropic의 한 연구원이 내부 연구 모델에 이렇게 물었다. 시드 생성 원리를 알아내라 — 단 '유머 문구 해시'라는 힌트는 주지 않았다. 30분도 안 되어 P-192·P-224·P-256·P-384·P-521 다섯 곡선의 시드가 전부 어떤 생성기에서 나왔는지 복원됐다. 답은 해시가 아니었다. C 라이브러리의 lrand48이었다. 48비트 상태를 갖고 매번 한 스텝씩 굴리는 선형합동 생성기인데, 스텝식은 이 한 줄뿐이다."}}]}</script>
 </head>
 <body>
 <header class="hwrap"><div class="wrap hrow">
